@@ -1,0 +1,141 @@
+/*baisic*/
+html{font-size: 8px;}
+html, body{
+    min-height: 100%;
+    width: 100%;
+}
+body{
+    font: 1.6rem/1.2 $book;
+    color: #000;
+	background: #fff;
+    font-weight: 400;
+    min-width: 310px; 
+    min-height: 100%;
+    position: relative;
+	overflow-x: hidden;
+    font-stretch: condensed;
+    opacity: 1;	
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
+}
+
+/*clearfix*/
+.clearfix:before,
+.clearfix:after{
+    content: " ";
+    display: table;
+}
+.clearfix:after {clear: both;}
+.clearfix{
+	zoom: 1;
+}
+
+/*box-sizing*/
+*, *:before, *:after, input[type="search"]{
+    box-sizing: border-box;
+}
+
+/*browserhappy*/
+.browserhappy{
+    background: red;
+    text-align: center;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    font-size: 20px;
+    color: #fff;
+    strong{text-transform: uppercase;}
+    a{
+        color: yellow;
+        text-decoration: underline;
+        &:hover{text-decoration: none;}
+    }
+}
+
+/*typographyc-reset*/
+ol,ul,li{    
+    margin:0;
+    padding: 0;    
+}
+ul li{list-style: none;}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+/*link reset*/
+a{
+    text-decoration: none;
+    outline: none;
+    transition: .25s ease;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    &:-moz-any-link:focus ,
+    &:-moz-focusring,
+    &::-moz-focus-inner,
+    &::-moz-focus-outer{
+        outline: 0!important;
+        outline: none;
+    }
+    &:active {
+        outline: none;
+    }
+}
+
+/*img reset*/
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*layout*/
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.main{flex-grow: 1;}
+.container-long{padding: 0 2.5rem;}
+.container{
+    margin: 0 auto;
+    padding: 0 2.5rem;
+    max-width: 128rem;
+}
+
+/*slick*/
+.slick-slide{outline: none;}
+.slick-arrow{
+	display: block;
+    padding: 0;
+    outline: 0!important;
+    outline-color: transparent!important;
+    outline-width: 0!important;
+    outline-style: none!important;
+    box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
+    border: none;
+    background: none;
+    box-shadow: none;
+    transition: .25s ease;  
+    cursor: pointer;
+    border-radius: 0;
+    white-space: nowrap;
+	position: absolute;
+	font-size: 0;
+}
+
+@media only screen and (max-width : 1479px){html{font-size: 7.5px;}}
+@media only screen and (max-width : 1366px){html{font-size: 7px;}}
+@media only screen and (max-width : 991px){html{font-size: 6.5px;}}
+@media only screen and (max-width : 767px){
+	html{font-size: 10px;}
+	.container-long{padding: 0 1.5rem;}
+	.container{padding: 0 1.5rem;}
+}

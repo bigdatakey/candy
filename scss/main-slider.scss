@@ -1,0 +1,79 @@
+.main-slider{
+	position: relative;
+	&__slide{
+		position: relative;
+	}
+	&__pic{
+		width: 100%;
+		padding-top: 42.8%;
+		background: center center no-repeat;
+		background-size: cover;
+	}
+	.slick-arrow{
+		top: 50%;
+		z-index: 6;
+    	opacity: 1;
+    	width: 2.9rem;
+    	height: 11.5rem;
+    	margin-top: -5.75rem;
+    	background: center center no-repeat;
+    	background-size: contain;
+	}
+	.slick-prev{
+		background-image: url(../img/main-slider/arrow-prev.png);
+		left: 2.5rem;
+	}
+	.slick-next{
+		background-image: url(../img/main-slider/arrow-next.png);
+		right: 2.5rem;
+	}
+	&__wrap{
+		text-align: center;
+		padding: 13rem 7.7rem 0;
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+		color: #000;
+	}
+	&__title{
+		font-size: 7rem;
+		font-weight: bold;
+		line-height: 1.1;
+		text-shadow: -.4rem -.4rem #fff;
+	}
+	&__txt{font-size: 3.4rem;}
+}
+@media only screen and (max-width : 767px){
+	.main-slider{
+		position: relative;
+		&__pic{
+			padding-top: 43.75%;
+		}
+		.slick-arrow{
+			top: 43.75vw;
+			width: 1.2rem;
+			height: 4.6rem;
+			margin-top: 3.4rem;
+		}
+		.slick-prev{left: 1.3rem;}
+		.slick-next{right: 1.3rem;}
+		&__wrap{
+			padding: 0 3.5rem 0;
+			position: static;
+		}
+		&__title{
+			font-size: 2.3rem;
+			line-height: 1.2;
+			text-shadow: none;
+			padding: 2rem 0 .5rem;
+			border-bottom: 1px solid #000;
+		}
+		&__txt{
+			font-size: 1.5rem;
+			font-style: italic;
+			opacity: .7;
+			padding-top: .9rem;
+		}
+	}
+}

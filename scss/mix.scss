@@ -1,0 +1,45 @@
+/*mixins*/
+@mixin btn($transtime){
+    display: block;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: $transtime ease;  
+    padding: 0;
+}
+/*подключение @include btn(.25s);*/
+@mixin input-reset($transtime){
+    display: block;
+	width: 100%;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: $transtime ease;  
+    padding: 0;
+	box-shadow: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+@mixin fieldset-reset{
+    display: block;
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+@mixin textarea-reset($transtime){
+    display: block;
+	width: 100%;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: $transtime ease;  
+    padding: 0;
+	box-shadow: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+	resize: none;
+}
