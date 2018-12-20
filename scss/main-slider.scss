@@ -5,7 +5,7 @@
 	}
 	&__pic{
 		width: 100%;
-		padding-top: 42.8%;
+		height: calc(100vh - 26.25rem);
 		background: center center no-repeat;
 		background-size: cover;
 	}
@@ -44,11 +44,19 @@
 	}
 	&__txt{font-size: 3.4rem;}
 }
+@media only screen and (max-width: 1366px){
+	.main-slider__pic {
+		height: calc(100vh - 25rem);
+		max-height: 600px;
+	}
+}
 @media only screen and (max-width : 767px){
 	.main-slider{
 		position: relative;
 		&__pic{
 			padding-top: 43.75%;
+			height: auto;
+			max-height: unset;
 		}
 		.slick-arrow{
 			top: 43.75vw;
