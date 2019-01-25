@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="Ru-ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Candy Couture</title>
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    
+	<link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!--SEO-->
+<!--
+    <meta name="description" content="Описание">
+    <meta name="keywords" content="Ключевые слова через запятую" />
+-->
+	
+    <!-- Meta-теги Open Graph для соц сетей -->
+<!--
+    <link rel="image_src" href="/img/og.jpg" />    
+    <meta property="og:type" content="website / movie / book / blog / etc" />
+    <meta property="og:url" content="http://site.ru" />    
+    <meta property="og:image" content="http://site.ru/img/og/og.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="968">
+    <meta property="og:image:height" content="504">    
+    <meta property="og:title" content="Заголовок для соцсети (ограничение в 65 символов)" />
+    <meta property="og:description" content="Описание для соцсети" />
+    <meta property="og:video" content="http://site.ru" />
+    <meta property="og:locale" content="ru_RU / en_GB / de_DE / etc." />
+    <meta property="og:site_name" content="site.ru" />
+-->
+    
+    <!-- Meta-теги для соц Twitter -->
+<!--
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Заголовок">
+    <meta name="twitter:description" content="Описание"/>
+    <meta name="twitter:creator" content="Автор"/>
+    <meta name="twitter:image:src" content="https://site.com/img/twitter.png"/>
+    <meta name="twitter:domain" content="http://site.ru"/>
+-->
+    
+    <!-- Цветовое оформление окон браузеров -->	
+	<meta name="theme-color" content="#fff">	
+	<meta name="msapplication-navbutton-color" content="#fff">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+</head>
+<body class="set-1">
+    <!--[if lt IE 8]>
+        <p class="browserhappy">
+            Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="https://browsehappy.com/"  target="_blank">обновите</a>.
+        </p>
+    <![endif]-->
+    <noscript>
+      	Вам нужно включить JavaScript в своем браузере, чтобы  отображение этой страницы было корректно.
+    </noscript>
+	<div class="wrapper">
+        <header class="header" id="js-header">
+            <div class="container-long">
+                <div class="header__wrap">
+                	<div class="header__bar">
+                		<nav class="header__bar-mob">
+                			<ul>
+                				<li><a href="#" class="js-sign-in-btn">Вход</a></li>
+                				<li><a href="#" class="js-sign-up-btn">Регистрация</a></li>
+                				<li><a href="#">Избранное</a></li>
+                				<li><a href="#">Поиск</a></li>
+                			</ul>
+                		</nav>
+                		<div class="header__bar-left">
+                			<button class="btn header__menu-btn js-mob-menu-btn">
+                				<span></span>
+                				<span></span>
+                				<span></span>
+                			</button>
+                			<a href="tel:+79854160660" class="header__tel">+7 (985) 416-06-60</a>
+                		</div>
+                		<div class="header__bar-right">
+                			<div class="header__sign"><a href="#" class="js-sign-in-btn">Вход</a> / <a href="#" class="js-sign-up-btn">Регистрация</a></div>
+                			<a href="#" class="header__shopcart" title="Корзина">В корзине <span>6</span></a>
+                			<a href="#" class="header__like" title="Избранное">Избранное</a>
+                			<form action="#" method="get" class="header__search">
+                				<input type="search" class="header__search-input" name="header-search" placeholder="Поиск по сайту">
+                				<button class="btn btn--search header__search-submit" type="submit" title="Искать">Искать</button>
+                			</form>
+                		</div>
+                	</div>
+                	<a href="/" class="header__logo-group">
+                		<img src="img/header/logobig.png" alt="Candy Couture">
+                		<span class="header__logo-txt">праздник со вкусом</span>
+                	</a>
+                </div>
+            </div>
+            <div class="container">
+            	<nav class="main-menu" id="js-main-menu">
+            		<button class="btn main-menu__close js-mob-menu-btn" title="Закрыть">Закрыть</button>
+            		<ul class="main-menu__list">
+            			<li><a href="#">КЭНДИ-БАР</a></li>
+            			<li><a href="#">ИНТЕРНЕТ-МАГАЗИН</a></li>
+            			<li>
+            				<a href="#">ДЕКОР</a>
+            				<ul class="main-menu__sublist">
+            					<li><a href="#">АРЕНДА</a></li>
+            					<li><a href="#">ПОКУПКА</a></li>
+							</ul>
+            			</li>
+            			<li><a href="#">B2B</a></li>
+            			<li><a href="#">УПАКОВКА</a></li>
+            		</ul>
+            	</nav>
+            </div>
+        </header>
+        <header class="header header--fix" id="js-header-fix">
+            <div class="container-long">
+                <div class="header__wrap">
+                	<div class="header__bar">
+                		<div class="header__bar-left">
+                			<a href="tel:+79854160660" class="header__tel">+7 (985) 416-06-60</a>
+                		</div>
+                		<div class="header__bar-right">
+                			<a href="#" class="header__shopcart" title="Корзина">В корзине <span>6</span></a>
+                			<form action="#" method="get" class="header__search">
+                				<input type="search" class="header__search-input" name="header-search" placeholder="Поиск по сайту">
+                				<button class="btn btn--search header__search-submit" type="submit" title="Искать">Искать</button>
+                			</form>
+                		</div>
+                	</div>
+                	<a href="/" class="header__logo-group">
+                		<img src="img/header/logobig.png" alt="Candy Couture">
+                	</a>
+                </div>
+            </div>
+            <div class="container">
+            	<nav class="main-menu">
+            		<ul class="main-menu__list">
+            			<li><a href="#">КЭНДИ-БАР</a></li>
+            			<li><a href="#">ИНТЕРНЕТ-МАГАЗИН</a></li>
+            			<li>
+            				<a href="#">ДЕКОР</a>
+            				<ul class="main-menu__sublist">
+            					<li><a href="#">АРЕНДА</a></li>
+            					<li><a href="#">ПОКУПКА</a></li>
+							</ul>
+            			</li>
+            			<li><a href="#">B2B</a></li>
+            			<li><a href="#">УПАКОВКА</a></li>
+            		</ul>
+            	</nav>
+            </div>
+        </header>
+        <div class="main">
+           	<div class="breadcrumbs">
+           		<div class="container">
+           			<a href="/">Главная</a>	&#8195;/&#8195; Кэнди-бар
+           		</div>
+           	</div>  
+           	<div class="candy-bar">
+           		<div class="container">
+           			<h1 class="candy-bar__title">Кэнди-бар</h1>
+           			<div class="candy-bar__wrap candy-bar__wrap--intro">
+           				<div class="candy-bar__item candy-bar__item--intro">
+           					<div class="candy-bar__item-pic-blc">
+								<div class="candy-bar__item-pic" style="background-image: url(img/candy-bar/cb-1.png)"></div>
+           					</div>
+           					<div class="candy-bar__item-bar">
+           						<a href="#" class="btn btn--black candy-bar__item-btn">Выбрать кэнди-бар</a>
+           						<div class="candy-bar__item-name">День Рождения</div>
+           					</div>
+           				</div>
+           				<div class="candy-bar__item candy-bar__item--intro">
+           					<div class="candy-bar__item-pic-blc">
+								<div class="candy-bar__item-pic" style="background-image: url(img/candy-bar/cb-2.png)"></div>
+           					</div>
+           					<div class="candy-bar__item-bar">
+           						<a href="#" class="btn btn--black candy-bar__item-btn">Выбрать кэнди-бар</a>
+           						<div class="candy-bar__item-name">Свадьба</div>
+           					</div>
+           				</div>
+           				<div class="candy-bar__item candy-bar__item--intro">
+           					<div class="candy-bar__item-pic-blc">
+								<div class="candy-bar__item-pic" style="background-image: url(img/candy-bar/cb-3.png)"></div>
+           					</div>
+           					<div class="candy-bar__item-bar">
+           						<a href="#" class="btn btn--black candy-bar__item-btn">Выбрать кэнди-бар</a>
+           						<div class="candy-bar__item-name">Корпоративные мероприятия</div>
+           					</div>
+           				</div>
+           				<div class="candy-bar__item candy-bar__item--intro">
+           					<div class="candy-bar__item-pic-blc">
+								<div class="candy-bar__item-pic" style="background-image: url(img/candy-bar/cb-4.png)"></div>
+           					</div>
+           					<div class="candy-bar__item-bar">
+           						<a href="#" class="btn btn--black candy-bar__item-btn">Выбрать кэнди-бар</a>
+           						<div class="candy-bar__item-name">Другие праздники</div>
+           					</div>
+           				</div>
+           			</div>
+           		</div>
+           	</div>
+           	<section class="banner" style="background-image: url(img/banner/banner.png)">
+           		<div class="banner__wrap">
+           			<h2 class="banner__title">Кэнди-бар специально для вас</h2>
+           			<p>Вы можете придумать и  воплотить в жизнь свой собственый кэнди-бар. И мы с радостью поможем вам в этом!</p>
+           			<a href="#" class="btn btn--black banner__btn">Оформить кэнди-бар</a>
+           		</div>
+           	</section>
+        </div>
+        <footer class="footer">
+            <div class="container-long">
+            	<nav class="footer__nav">
+            		<ul>
+            			<li><a href="#">О компании</a></li>
+            			<li><a href="#">Агентствам</a></li>
+            			<li><a href="#">Свадьба</a></li>
+            			<li><a href="#">Оплата и доставка</a></li>
+            			<li><a href="#">Контакты</a></li>
+            		</ul>
+            	</nav>
+            </div>
+            <div class="container">
+            	<div class="footer__wrap">
+            		<div class="footer__row">
+            			<div class="footer__tel">
+            				<a href="tel:+79854160660">+7 (985) 416-06-60</a>
+						</div>
+            			<ul class="footer__soc">
+            				<li>
+            					<a href="#" target="_blank" class="footer__soc-link footer__soc-link--pinterest" title="Pinterest">
+            						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" xml:space="preserve">
+										<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M251.83,297.635c-19.57,0-37.973-10.516-44.227-22.557  c0,0-10.516,41.691-12.71,49.78c-7.84,28.437-30.926,56.874-32.684,59.176c-1.229,1.649-4.013,1.105-4.324-1.026  c-0.482-3.656-6.379-39.497,0.545-68.728c3.469-14.701,23.272-98.627,23.272-98.627s-5.771-11.543-5.771-28.624  c0-26.85,15.556-46.856,34.939-46.856c16.474,0,24.377,12.337,24.377,27.177c0,16.521-10.516,41.318-15.977,64.216  c-4.511,19.212,9.598,34.831,28.546,34.831c34.332,0,57.371-43.993,57.371-96.138c0-39.684-26.678-69.397-75.292-69.397  c-54.867,0-89.075,40.96-89.075,86.649c0,15.805,4.667,26.928,11.963,35.499c3.345,4.014,3.765,5.585,2.613,10.143  c-0.917,3.344-2.862,11.309-3.765,14.529c-1.151,4.559-4.931,6.191-9.053,4.496c-25.217-10.329-37.009-37.989-37.009-69.164  C105.569,131.619,148.832,70,234.874,70c69.101,0,114.557,50.013,114.557,103.667C349.431,244.635,309.995,297.635,251.83,297.635z"></path>
+										<g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+           							</svg>
+            					</a>
+            				</li>
+            				<li>
+								<a href="#" target="_blank" class="footer__soc-link footer__soc-link--instagram" title="Instagram">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve"><g><g id="post-instagram">
+										<path d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z     M255,153c56.1,0,102,45.9,102,102c0,56.1-45.9,102-102,102c-56.1,0-102-45.9-102-102C153,198.9,198.9,153,255,153z M63.75,459    C56.1,459,51,453.9,51,446.25V229.5h53.55C102,237.15,102,247.35,102,255c0,84.15,68.85,153,153,153c84.15,0,153-68.85,153-153    c0-7.65,0-17.85-2.55-25.5H459v216.75c0,7.65-5.1,12.75-12.75,12.75H63.75z M459,114.75c0,7.65-5.1,12.75-12.75,12.75h-51    c-7.65,0-12.75-5.1-12.75-12.75v-51c0-7.65,5.1-12.75,12.75-12.75h51C453.9,51,459,56.1,459,63.75V114.75z"></path>
+										</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+									</svg>
+								</a>
+            				</li>
+            				<li>
+								<a href="#" target="_blank" class="footer__soc-link footer__soc-link--telegram" title="Telegram">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" xml:space="preserve"><g>
+										<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M384.814,100.68l-53.458,257.136   c-1.259,6.071-8.378,8.822-13.401,5.172l-72.975-52.981c-4.43-3.217-10.471-3.046-14.712,0.412l-40.46,32.981   c-4.695,3.84-11.771,1.7-13.569-4.083l-28.094-90.351l-72.583-27.089c-7.373-2.762-7.436-13.171-0.084-16.003L373.36,90.959   C379.675,88.517,386.19,94.049,384.814,100.68z"></path>
+										<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M313.567,147.179l-141.854,87.367c-5.437,3.355-7.996,9.921-6.242,16.068   l15.337,53.891c1.091,3.818,6.631,3.428,7.162-0.517l3.986-29.553c0.753-5.564,3.406-10.693,7.522-14.522l117.069-108.822   C318.739,149.061,316.115,145.614,313.567,147.179z"></path></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+									</svg>
+								</a>
+							</li>
+            				<li>
+								<a href="#" target="_blank" class="footer__soc-link footer__soc-link--facebook" title="Facebook">
+									<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455.73 455.73" style="enable-background:new 0 0 455.73 455.73;" xml:space="preserve">
+										<path d="M0,0v455.73h242.704V279.691h-59.33v-71.864h59.33v-60.353c0-43.893,35.582-79.475,79.475-79.475
+										h62.025v64.622h-44.382c-13.947,0-25.254,11.307-25.254,25.254v49.953h68.521l-9.47,71.864h-59.051V455.73H455.73V0H0z"></path><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+									</svg>
+								</a>
+            				</li>
+            			</ul>
+            			<button class="btn btn--black footer__subscribe js-subscribe">Подписаться на новости</button>
+            		</div>
+            		<div class="footer__copyright">
+            			Copyright © 2013-2018 ИП Баженова О.А.
+            		</div>
+            		<div class="footer__copyright">
+            			<a target="_blank" href="/public.pdf">Политика конфиденциальности</a>
+            		</div>
+            		<div class="footer__copyright">            			
+						Создание сайта <a target="_blank" href="http://bigdatak.com">BIG DATA KEY</a>
+            		</div>
+            	</div>
+            </div>
+        </footer>
+        <div class="popup" id="js-sign-in-popup">
+        	<div class="popup__overlay js-sign-in-close"></div>
+        	<div class="popup__main popup__main--sign">
+        		<button class="btn popup__close js-sign-in-close" title="Закрыть">Закрыть</button>
+        		<h2 class="popup__title">Вход</h2>
+        		<form action="#" method="post" class="popup__form">
+        			<label class="popup__label">
+        				<input type="email" name="sign-in_email" class="popup__input" required placeholder="E-mail">
+        			</label>
+        			<label class="popup__label">
+        				<input type="password" name="sign-in_password" class="popup__input" required placeholder="Пароль">
+        			</label>
+        			<button class="btn btn--black popup__submit" type="submit">Войти</button>
+        			<div class="popup__or">или</div>
+        			<ul class="popup__soc">
+            			<li>
+            				<a href="#" target="_blank" class="popup__soc-link popup__soc-link--pinterest" title="Pinterest">
+            					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" xml:space="preserve">
+									<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M251.83,297.635c-19.57,0-37.973-10.516-44.227-22.557  c0,0-10.516,41.691-12.71,49.78c-7.84,28.437-30.926,56.874-32.684,59.176c-1.229,1.649-4.013,1.105-4.324-1.026  c-0.482-3.656-6.379-39.497,0.545-68.728c3.469-14.701,23.272-98.627,23.272-98.627s-5.771-11.543-5.771-28.624  c0-26.85,15.556-46.856,34.939-46.856c16.474,0,24.377,12.337,24.377,27.177c0,16.521-10.516,41.318-15.977,64.216  c-4.511,19.212,9.598,34.831,28.546,34.831c34.332,0,57.371-43.993,57.371-96.138c0-39.684-26.678-69.397-75.292-69.397  c-54.867,0-89.075,40.96-89.075,86.649c0,15.805,4.667,26.928,11.963,35.499c3.345,4.014,3.765,5.585,2.613,10.143  c-0.917,3.344-2.862,11.309-3.765,14.529c-1.151,4.559-4.931,6.191-9.053,4.496c-25.217-10.329-37.009-37.989-37.009-69.164  C105.569,131.619,148.832,70,234.874,70c69.101,0,114.557,50.013,114.557,103.667C349.431,244.635,309.995,297.635,251.83,297.635z"></path>
+									<g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+           						</svg>
+            				</a>
+            			</li>
+            			<li>
+							<a href="#" target="_blank" class="popup__soc-link popup__soc-link--instagram" title="Instagram">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve"><g><g id="post-instagram">
+									<path d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z     M255,153c56.1,0,102,45.9,102,102c0,56.1-45.9,102-102,102c-56.1,0-102-45.9-102-102C153,198.9,198.9,153,255,153z M63.75,459    C56.1,459,51,453.9,51,446.25V229.5h53.55C102,237.15,102,247.35,102,255c0,84.15,68.85,153,153,153c84.15,0,153-68.85,153-153    c0-7.65,0-17.85-2.55-25.5H459v216.75c0,7.65-5.1,12.75-12.75,12.75H63.75z M459,114.75c0,7.65-5.1,12.75-12.75,12.75h-51    c-7.65,0-12.75-5.1-12.75-12.75v-51c0-7.65,5.1-12.75,12.75-12.75h51C453.9,51,459,56.1,459,63.75V114.75z"></path>
+									</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+								</svg>
+							</a>
+            			</li>
+            			<li>
+							<a href="#" target="_blank" class="popup__soc-link popup__soc-link--telegram" title="Telegram">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" xml:space="preserve"><g>
+									<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M384.814,100.68l-53.458,257.136   c-1.259,6.071-8.378,8.822-13.401,5.172l-72.975-52.981c-4.43-3.217-10.471-3.046-14.712,0.412l-40.46,32.981   c-4.695,3.84-11.771,1.7-13.569-4.083l-28.094-90.351l-72.583-27.089c-7.373-2.762-7.436-13.171-0.084-16.003L373.36,90.959   C379.675,88.517,386.19,94.049,384.814,100.68z"></path>
+									<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M313.567,147.179l-141.854,87.367c-5.437,3.355-7.996,9.921-6.242,16.068   l15.337,53.891c1.091,3.818,6.631,3.428,7.162-0.517l3.986-29.553c0.753-5.564,3.406-10.693,7.522-14.522l117.069-108.822   C318.739,149.061,316.115,145.614,313.567,147.179z"></path></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+								</svg>
+							</a>
+						</li>
+            			<li>
+							<a href="#" target="_blank" class="popup__soc-link popup__soc-link--facebook" title="Facebook">
+								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455.73 455.73" style="enable-background:new 0 0 455.73 455.73;" xml:space="preserve">
+									<path d="M0,0v455.73h242.704V279.691h-59.33v-71.864h59.33v-60.353c0-43.893,35.582-79.475,79.475-79.475
+									h62.025v64.622h-44.382c-13.947,0-25.254,11.307-25.254,25.254v49.953h68.521l-9.47,71.864h-59.051V455.73H455.73V0H0z"></path><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+								</svg>
+							</a>
+            			</li>
+            		</ul>
+        		</form>
+        	</div>
+        </div>
+        <div class="popup" id="js-sign-up-popup">
+        	<div class="popup__overlay js-sign-up-close"></div>
+        	<div class="popup__main popup__main--sign">
+        		<button class="btn popup__close js-sign-up-close" title="Закрыть">Закрыть</button>
+        		<h2 class="popup__title">Регистрация</h2>
+        		<form action="#" method="post" class="popup__form">
+        			<label class="popup__label">
+        				<input type="email" name="sign-up_email" class="popup__input" required placeholder="E-mail">
+        			</label>
+        			<label class="popup__label">
+        				<input type="password" name="sign-up_password" class="popup__input" required placeholder="Пароль">
+        			</label>
+        			<button class="btn btn--black popup__submit" type="submit">Зарегистрироваться</button>
+        			<div class="popup__desc">Нажимая «Зарегистрироваться», вы соглашаетесь с <a href="#" target="_blank">«Положением об обработке персональных данных»</a></div>
+        			<div class="popup__or">или войдите через соцсети:</div>
+        			<ul class="popup__soc">
+            			<li>
+            				<a href="#" target="_blank" class="popup__soc-link popup__soc-link--pinterest" title="Pinterest">
+            					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" xml:space="preserve">
+									<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M251.83,297.635c-19.57,0-37.973-10.516-44.227-22.557  c0,0-10.516,41.691-12.71,49.78c-7.84,28.437-30.926,56.874-32.684,59.176c-1.229,1.649-4.013,1.105-4.324-1.026  c-0.482-3.656-6.379-39.497,0.545-68.728c3.469-14.701,23.272-98.627,23.272-98.627s-5.771-11.543-5.771-28.624  c0-26.85,15.556-46.856,34.939-46.856c16.474,0,24.377,12.337,24.377,27.177c0,16.521-10.516,41.318-15.977,64.216  c-4.511,19.212,9.598,34.831,28.546,34.831c34.332,0,57.371-43.993,57.371-96.138c0-39.684-26.678-69.397-75.292-69.397  c-54.867,0-89.075,40.96-89.075,86.649c0,15.805,4.667,26.928,11.963,35.499c3.345,4.014,3.765,5.585,2.613,10.143  c-0.917,3.344-2.862,11.309-3.765,14.529c-1.151,4.559-4.931,6.191-9.053,4.496c-25.217-10.329-37.009-37.989-37.009-69.164  C105.569,131.619,148.832,70,234.874,70c69.101,0,114.557,50.013,114.557,103.667C349.431,244.635,309.995,297.635,251.83,297.635z"></path>
+									<g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+           						</svg>
+            				</a>
+            			</li>
+            			<li>
+							<a href="#" target="_blank" class="popup__soc-link popup__soc-link--instagram" title="Instagram">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve"><g><g id="post-instagram">
+									<path d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z     M255,153c56.1,0,102,45.9,102,102c0,56.1-45.9,102-102,102c-56.1,0-102-45.9-102-102C153,198.9,198.9,153,255,153z M63.75,459    C56.1,459,51,453.9,51,446.25V229.5h53.55C102,237.15,102,247.35,102,255c0,84.15,68.85,153,153,153c84.15,0,153-68.85,153-153    c0-7.65,0-17.85-2.55-25.5H459v216.75c0,7.65-5.1,12.75-12.75,12.75H63.75z M459,114.75c0,7.65-5.1,12.75-12.75,12.75h-51    c-7.65,0-12.75-5.1-12.75-12.75v-51c0-7.65,5.1-12.75,12.75-12.75h51C453.9,51,459,56.1,459,63.75V114.75z"></path>
+									</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+								</svg>
+							</a>
+            			</li>
+            			<li>
+							<a href="#" target="_blank" class="popup__soc-link popup__soc-link--telegram" title="Telegram">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" xml:space="preserve"><g>
+									<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M384.814,100.68l-53.458,257.136   c-1.259,6.071-8.378,8.822-13.401,5.172l-72.975-52.981c-4.43-3.217-10.471-3.046-14.712,0.412l-40.46,32.981   c-4.695,3.84-11.771,1.7-13.569-4.083l-28.094-90.351l-72.583-27.089c-7.373-2.762-7.436-13.171-0.084-16.003L373.36,90.959   C379.675,88.517,386.19,94.049,384.814,100.68z"></path>
+									<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M313.567,147.179l-141.854,87.367c-5.437,3.355-7.996,9.921-6.242,16.068   l15.337,53.891c1.091,3.818,6.631,3.428,7.162-0.517l3.986-29.553c0.753-5.564,3.406-10.693,7.522-14.522l117.069-108.822   C318.739,149.061,316.115,145.614,313.567,147.179z"></path></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+								</svg>
+							</a>
+						</li>
+            			<li>
+							<a href="#" target="_blank" class="popup__soc-link popup__soc-link--facebook" title="Facebook">
+								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455.73 455.73" style="enable-background:new 0 0 455.73 455.73;" xml:space="preserve">
+									<path d="M0,0v455.73h242.704V279.691h-59.33v-71.864h59.33v-60.353c0-43.893,35.582-79.475,79.475-79.475
+									h62.025v64.622h-44.382c-13.947,0-25.254,11.307-25.254,25.254v49.953h68.521l-9.47,71.864h-59.051V455.73H455.73V0H0z"></path><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+								</svg>
+							</a>
+            			</li>
+            		</ul>
+        		</form>
+        	</div>
+        </div>
+	</div>
+	<!--jQuery-->
+	<script src="js/vendors/jquery.min.js"></script>
+	<!--Slick-->
+	<script src="js/vendors/slick.min.js"></script>
+	<!--init-->
+	<script src="js/jquery.init.js"></script>	
+	<!--my scripts-->
+	<script src="js/jquery.main.js"></script>
+</body>
+</html>
+

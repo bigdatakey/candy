@@ -1,8 +1,9 @@
 /*fonts*/
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Open+Sans:300,400,700&subset=cyrillic,cyrillic-ext,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Open+Sans:300,400,600,700&subset=cyrillic,cyrillic-ext,latin-ext');
 @import "fonts.css";
 /*vendors*/
 @import "vendors/normalize.css";
+@import "vendors/jquery.formstyler.css";
 @import "vendors/slick.css";
 /*customs*/
 @import "vars";
@@ -21,3 +22,8 @@
 @import "breadcrumbs";
 @import "main-form";
 @import "search-page";
+@import "decor";
+@import "b2b";
+@import "banner";
+@import "candy-bar";
+@import "catalog";

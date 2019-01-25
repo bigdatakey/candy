@@ -1,0 +1,50 @@
+.decor{
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+	&__item{
+		width: calc(50% - 1.5rem);
+		position: relative;
+		overflow: hidden;
+		&:hover{
+			.decor__pic{
+				opacity: .8;
+				transform: scale(1.2);
+			}
+		}
+	}
+	&__pic{
+		width: 100%;
+		padding-top: 100%;
+		background: center center no-repeat;
+		background-size: cover;
+		transition: opacity .5s ease, transform 3s ease;
+	}
+	&__btn{
+		position: absolute;
+		z-index: 2;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+  		width: 17.3rem;
+		height: 4.2rem;
+		line-height: calc(4.2rem - 2px);
+		font-size: 2rem;
+	}
+}
+
+@media only screen and (max-width : 560px){
+	.decor{
+		flex-wrap: wrap;
+		&__item{
+			width: 100%;
+			margin-bottom: 1.5rem;
+			&:hover{
+				.decor__pic{
+					opacity: 1;
+					transform: none;
+				}
+			}
+		}
+	}
+}

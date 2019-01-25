@@ -34,4 +34,12 @@ $(document).ready(function(){
 	$('.js-sign-up-close').on('click', function(){
 		$('#js-sign-up-popup').fadeOut(250);
 	});
+	
+	/*filter*/
+	$('.js-filter-title').on('click', function(){
+		$(this).toggleClass('open').next('.js-filter-main').slideToggle(250);
+	});
+	$('#js-filter-btn').on('click', function(){
+		$('#js-filter').slideToggle(250);
+	});
 });
