@@ -1,10 +1,18 @@
 .main-banners{
-	padding: 1.5rem 0;
+	padding: 1.5rem 2.5rem;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	&__col{
+		width: calc((100% - 5rem) / 3);	
+	}
 	&__banner{
-		width: calc(50% - 1.5rem);
-		margin: 1.5rem 0;
+		width: 100%;
+		margin-bottom: 2rem;
+		&:last-child{margin-bottom: 0;}
 		position: relative;
 		overflow: hidden;
+		
 		&-pic{
 			width: 100%;
 			background: center center no-repeat;
@@ -16,9 +24,7 @@
 		}
 		&--small{
 			.main-banners__banner-pic{padding-top: 61%;}
-		}
-		&--1, &--2{float: left;}
-		&--3,&--4{float: right;}	
+		}	
 		&:hover{
 			.main-banners__banner-pic{
 				opacity: .8;
@@ -54,10 +60,16 @@
 		margin: 0 auto;
 	}
 }
-
+@media only screen and (max-width : 1024px){
+	.main-banners__title{font-size: 2.4rem;}
+}
 @media only screen and (max-width : 767px){
 	.main-banners{
+		display: block;
 		padding: 0;
+		&__col{
+			width: 100%;
+		}
 		&__banner{
 			width: 100%;
 			margin: 3rem 0;
