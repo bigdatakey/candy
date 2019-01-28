@@ -37,4 +37,16 @@
 			color: #000;
 		}
 	}
+	&--white{
+		text-align: center;
+		background: #fff;
+		color: #000;
+		border: 1px solid #000;
+		font-family: $opensans;
+		transition: none;
+		&:hover{
+			background: #666;
+			color: #fff;
+		}
+	}
 }
