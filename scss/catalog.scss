@@ -1,5 +1,7 @@
 .catalog{
-	margin-bottom: 3.6rem;
+	margin: 0 auto 3.6rem;
+	max-width: 192rem;
+	width: 100%;
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
@@ -153,9 +155,10 @@
 		justify-content: flex-start;
 	}
 	&__item{
-		width: calc((100% - 12rem) / 6);
+		width: calc((100% - 7.2rem) / 4);
 		margin: 0 2.4rem 3.6rem 0;
-		&:nth-child(6n+6){margin-right: 0;}
+		&:nth-child(6n+6){margin-right: 2.4rem;}
+		&:nth-child(4n+4){margin-right: 0;}
 		&-pic{
 			width: 100%;
 			padding-top: 100%;			
@@ -239,7 +242,7 @@
 		}
 		&-main{
 			text-align: center;
-			font-family: $garamond;
+			font-family: $opensans;
 			padding-top: 1.2rem;
 		}
 		&-name{
@@ -247,6 +250,7 @@
 			display: block;
 			font-size: 2rem;
 			margin-bottom: .5rem;
+			font-weight: bold;
 		}
 		&-price{
 			font-size: 1.8rem;
@@ -297,14 +301,7 @@
 }
 
 @media only screen and (max-width : 1799px){
-	.catalog{
-		&__item{
-			width: calc((100% - 7.2rem) / 4);
-			margin: 0 2.4rem 3.6rem 0;
-			&:nth-child(6n+6){margin-right: 2.4rem;}
-			&:nth-child(4n+4){margin-right: 0;}
-		}
-	}
+
 }
 @media only screen and (max-width : 1366px){
 	.catalog{

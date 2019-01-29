@@ -2,8 +2,10 @@
 	background: #fff;
 	border-bottom: .4rem solid #000;
 	padding-top: 2.2rem;
+	position: relative;
+	z-index: 111;
 	&__wrap{
-		padding-bottom: 5rem;
+		padding-bottom: 4rem;
 	}
 	&__bar{
 		display: flex;
@@ -28,7 +30,7 @@
 		color: #000;
 		font-weight: 300;
 		font-family: $opensans;
-		font-size: 1.8rem;
+		font-size: 1.5rem;
 		display: block;
 		margin-right: 1.5rem;
 		a{
@@ -97,7 +99,6 @@
 		max-width: 60.8rem;
 		text-align: center;
 		color: #000;
-		img{margin-bottom: .6rem;}
 	}
 	&__logo-txt{
 		opacity: .66;
@@ -111,7 +112,7 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		z-index: 106;
+		z-index: 112;
 		box-shadow: 0 .5rem 2.1rem 0 rgba(0, 0, 0, .09);
 		border-bottom: none;
 		transition: transform .25s ease;
@@ -163,6 +164,7 @@
 		.main-menu__sublist>li>a{font-size: 1.5rem;}
 		.main-menu__sublist>li {padding: 0 0 2.6rem;}
 		.main-menu__sublist{padding-top: 8rem;}
+		.header__sign{font-size: 1.4rem;}
 	}
 }
 .main-menu{
