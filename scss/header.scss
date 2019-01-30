@@ -40,17 +40,18 @@
 	}
 	&__shopcart{
 		display: block;
-		width: 4.2rem;
-		height: 4.7rem;
-		margin-right: 2.5rem;
+		width: 3.7rem;
+		height: 3.9rem;
+		margin-right: 2.4rem;
 		background: url(../img/icons/shopping-bag.svg) center 0 no-repeat;
 		background-size: 100% auto;
 		font-size: 0;
 		span{
 			color: #fff;
 			display: block;
-			font-size: 2.5rem;
-			padding: 1rem 0 0 1.2rem;
+			font-size: 1.7rem;
+			padding: 1.1rem .3rem 0 0;
+			text-align: center;
 		}
 	}
 	&__like{
@@ -131,7 +132,7 @@
 				color: #fff;
 				display: block;
 				font-size: 1.7rem;
-				padding: 1rem 0 0 1.2rem;
+				padding: 1rem .3rem 0 0;
 			}
 		}
 		.header__like{
