@@ -144,78 +144,208 @@
         <div class="main">
            	<div class="breadcrumbs">
            		<div class="container">
-           			<a href="/">Главная</a>	&#8195;/&#8195; Избранное
+           			<a href="/">Главная</a>	&#8195;/&#8195; Корзина 
            		</div>
            	</div> 
            	<div class="article">
            		<div class="container">
-           			<h1>Избранное</h1>
-           		</div>
-           	</div> 
-           	<div class="fav">
-           		<div class="container">
-           			<div class="fav__container">
-           				<div class="fav__pagination fav__pagination--top">
-           					<div class="pagination">
-           						<a href="#" class="pagination__item active">1</a>
-           						<a href="#" class="pagination__item">2</a>
-           						<a href="#" class="pagination__item">3</a>
-           						<span>&#8230;</span>
-           						<a href="#" class="pagination__item">15</a>
-           						<a href="" class="pagination__next">Далее</a>
-           					</div>
-           				</div>
-           				<div class="fav__wrap">
-           					<div class="fav__item">
-           						<a href="#" class="fav__item-pic"><img src="img/kex.jpg" alt=""></a>
-           						<div class="fav__item-main">
-           							<div class="fav__item-name">Маффины "Ягода"</div>
-           							<div class="fav__item-price">500 руб.</div>
-           							<div class="fav__item-calc"><input type="number" min="1" step="1" value="1"></div>
-           							<div class="fav__item-bar">
-           								<button class="btn btn--black fav__item-btn">В корзину</button>
-           								<button class="btn btn--del fav__item-del" title="Удалить">Удалить</button>
-           							</div>
-           						</div>
-           					</div>
-           					<div class="fav__item">
-           						<a href="#" class="fav__item-pic"><img src="img/kex.jpg" alt=""></a>
-           						<div class="fav__item-main">
-           							<div class="fav__item-name">Маффины "Ягода"</div>
-           							<div class="fav__item-price">500 руб.</div>
-           							<div class="fav__item-calc"><input type="number" min="1" step="1" value="1"></div>
-           							<div class="fav__item-bar">
-           								<button class="btn btn--black fav__item-btn">В корзину</button>
-           								<button class="btn btn--del fav__item-del" title="Удалить">Удалить</button>
-           							</div>
-           						</div>
-           					</div>
-           					<div class="fav__item">
-           						<a href="#" class="fav__item-pic"><img src="img/kex.jpg" alt=""></a>
-           						<div class="fav__item-main">
-           							<div class="fav__item-name">Маффины "Ягода"</div>
-           							<div class="fav__item-price">500 руб.</div>
-           							<div class="fav__item-calc"><input type="number" min="1" step="1" value="1"></div>
-           							<div class="fav__item-bar">
-           								<button class="btn btn--black fav__item-btn">В корзину</button>
-           								<button class="btn btn--del fav__item-del" title="Удалить">Удалить</button>
-           							</div>
-           						</div>
-           					</div>
-           				</div>
-           				<div class="fav__pagination">
-           					<div class="pagination">
-           						<a href="#" class="pagination__item active">1</a>
-           						<a href="#" class="pagination__item">2</a>
-           						<a href="#" class="pagination__item">3</a>
-           						<span>&#8230;</span>
-           						<a href="#" class="pagination__item">15</a>
-           						<a href="" class="pagination__next">Далее</a>
-           					</div>
-           				</div>
+           			<div class="article__header">
+           				<h1>Корзина</h1>
+           				<a href="#" class="btn btn--black fav__order-btn">Оформить заказ</a>
            			</div>
            		</div>
-           	</div>    
+           	</div> 
+           	<div class="shopcart">
+           		<div class="container">
+           			<div class="fav__wrap">
+           				<div class="fav__theader">
+           					<div class="fav__th fav__th--1">Товар</div>
+           					<div class="fav__th fav__th--2">Описание</div>
+           					<div class="fav__th fav__th--3">Цена</div>
+           					<div class="fav__th fav__th--4">Количество</div>
+           					<div class="fav__th fav__th--5">Сумма</div>
+           				</div>
+           				<div class="fav__main">
+							<div class="fav__group">
+								<div class="fav__item">
+									<a href="#" class="fav__item-pic"><img src="img/kex.jpg" alt=""></a>
+									<div class="fav__item-main">
+										<div class="fav__item-name">Маффины "Ягода"</div>
+										<div class="fav__item-price">500 руб.</div>
+										<div class="fav__item-calc"><input type="number" min="1" step="1" value="1"></div>
+										<div class="fav__item-bar">
+											<div class="fav__item-summ">500 руб.</div>
+											<button class="btn btn--del fav__item-del" title="Удалить">Удалить</button>
+										</div>
+									</div>
+								</div>
+								<div class="fav__item">
+									<a href="#" class="fav__item-pic"><img src="img/pac.jpg" alt=""></a>
+									<div class="fav__item-main">
+										<div class="fav__item-name">Упаковка «White»</div>
+										<div class="fav__item-price">200 руб.</div>
+										<div class="fav__item-calc"><input type="number" min="1" step="1" value="1"></div>
+										<div class="fav__item-bar">
+											<div class="fav__item-summ">200 руб.</div>
+											<button class="btn btn--del fav__item-del" title="Удалить">Удалить</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="fav__group fav__group--no-pac">
+								<div class="fav__item">
+									<a href="#" class="fav__item-pic"><img src="img/kex.jpg" alt=""></a>
+									<div class="fav__item-main">
+										<div class="fav__item-name">Маффины "Ягода"</div>
+										<div class="fav__item-price">500 руб.</div>
+										<div class="fav__item-calc"><input type="number" min="1" step="1" value="1"></div>
+										<div class="fav__item-bar">
+											<div class="fav__item-summ">500 руб.</div>
+											<button class="btn btn--del fav__item-del" title="Удалить">Удалить</button>
+											<button class="btn fav__item-add">Приобрести упаковку</button>
+										</div>
+									</div>
+								</div>
+							</div>
+           				</div>
+           				<div class="fav__footer">
+           					<div class="fav__footer-summ">Итого: 1200 руб.</div>
+           				</div>
+           				<div class="fav__bar">
+           					<a href="#" class="btn btn--black fav__order-btn">Оформить заказ</a>
+           				</div>
+           			</div>           			
+           		</div>
+           	</div>  
+           	<section class="carusel">
+           				<div class="container">
+           					<h2 class="carusel__title">С этим покупают</h2>
+           					<div class="carusel__wrap">
+								<div class="carusel__slider" id="js-carusel">
+									<div>
+										<div class="carusel__slide">
+											<div class="catalog__item">
+												<div class="catalog__item-pic">
+													<a class="catalog__item-pic-img" href="#"><img src="img/kex.jpg" alt=""><img src="img/kex-2.jpg" alt=""></a>
+													<button class="btn catalog__item-like" title="В избраное">В избраное</button>
+													<button class="btn btn--black catalog__item-shopcart">В корзину</button>
+												</div>
+												<div class="catalog__item-main">
+													<a href="#" class="catalog__item-name">Маффины «Ягода»</a>
+													<div class="catalog__item-price">500 руб.</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="carusel__slide">
+											<div class="catalog__item">
+												<div class="catalog__item-pic">
+													<a class="catalog__item-pic-img" href="#"><img src="img/kex.jpg" alt=""><img src="img/kex-2.jpg" alt=""></a>
+													<button class="btn catalog__item-like" title="В избраное">В избраное</button>
+													<button class="btn btn--black catalog__item-shopcart">В корзину</button>
+												</div>
+												<div class="catalog__item-main">
+													<a href="#" class="catalog__item-name">Маффины «Ягода»</a>
+													<div class="catalog__item-price">500 руб.</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="carusel__slide">
+											<div class="catalog__item">
+												<div class="catalog__item-pic">
+													<a class="catalog__item-pic-img" href="#"><img src="img/kex.jpg" alt=""><img src="img/kex-2.jpg" alt=""></a>
+													<button class="btn catalog__item-like" title="В избраное">В избраное</button>
+													<button class="btn btn--black catalog__item-shopcart">В корзину</button>
+												</div>
+												<div class="catalog__item-main">
+													<a href="#" class="catalog__item-name">Маффины «Ягода»</a>
+													<div class="catalog__item-price">500 руб.</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="carusel__slide">
+											<div class="catalog__item">
+												<div class="catalog__item-pic">
+													<a class="catalog__item-pic-img" href="#"><img src="img/kex.jpg" alt=""><img src="img/kex-2.jpg" alt=""></a>
+													<button class="btn catalog__item-like" title="В избраное">В избраное</button>
+													<button class="btn btn--black catalog__item-shopcart">В корзину</button>
+												</div>
+												<div class="catalog__item-main">
+													<a href="#" class="catalog__item-name">Маффины «Ягода»</a>
+													<div class="catalog__item-price">500 руб.</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="carusel__slide">
+											<div class="catalog__item">
+												<div class="catalog__item-pic">
+													<a class="catalog__item-pic-img" href="#"><img src="img/kex.jpg" alt=""><img src="img/kex-2.jpg" alt=""></a>
+													<button class="btn catalog__item-like" title="В избраное">В избраное</button>
+													<button class="btn btn--black catalog__item-shopcart">В корзину</button>
+												</div>
+												<div class="catalog__item-main">
+													<a href="#" class="catalog__item-name">Маффины «Ягода»</a>
+													<div class="catalog__item-price">500 руб.</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="carusel__slide">
+											<div class="catalog__item">
+												<div class="catalog__item-pic">
+													<a class="catalog__item-pic-img" href="#"><img src="img/kex.jpg" alt=""><img src="img/kex-2.jpg" alt=""></a>
+													<button class="btn catalog__item-like" title="В избраное">В избраное</button>
+													<button class="btn btn--black catalog__item-shopcart">В корзину</button>
+												</div>
+												<div class="catalog__item-main">
+													<a href="#" class="catalog__item-name">Маффины «Ягода»</a>
+													<div class="catalog__item-price">500 руб.</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="carusel__slide">
+											<div class="catalog__item">
+												<div class="catalog__item-pic">
+													<a class="catalog__item-pic-img" href="#"><img src="img/kex.jpg" alt=""><img src="img/kex-2.jpg" alt=""></a>
+													<button class="btn catalog__item-like" title="В избраное">В избраное</button>
+													<button class="btn btn--black catalog__item-shopcart">В корзину</button>
+												</div>
+												<div class="catalog__item-main">
+													<a href="#" class="catalog__item-name">Маффины «Ягода»</a>
+													<div class="catalog__item-price">500 руб.</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="carusel__slide">
+											<div class="catalog__item">
+												<div class="catalog__item-pic">
+													<a class="catalog__item-pic-img" href="#"><img src="img/kex.jpg" alt=""><img src="img/kex-2.jpg" alt=""></a>
+													<button class="btn catalog__item-like" title="В избраное">В избраное</button>
+													<button class="btn btn--black catalog__item-shopcart">В корзину</button>
+												</div>
+												<div class="catalog__item-main">
+													<a href="#" class="catalog__item-name">Маффины «Ягода»</a>
+													<div class="catalog__item-price">500 руб.</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+           					</div>
+           				</div>
+           			</section>  
         </div>
         <footer class="footer">
             <div class="container-long">

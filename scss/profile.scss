@@ -139,7 +139,7 @@
 		&:last-child{margin-bottom: 0;}
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-between;
 		font-size: 1.7rem;
 		font-weight: 300;
 		font-family: $opensans;
@@ -154,7 +154,8 @@
 			justify-content: space-between;
 		}
 		&-bar{
-			width: 13.6rem;
+			width: 20rem;
+			text-align: center;
 		}
 		&-btn{
 			width: 100%;
@@ -164,9 +165,9 @@
 		&-del{
 			position: absolute;
 			top: 0;
-			right: 0;
-			width: 13px;
+			right: 1.5rem;
 			height: 13px;
+			width: 13px;
 			font-size: 0;
 			z-index: 3;
 			&:before,
@@ -183,9 +184,19 @@
 			&:before{transform: translate(-50%, -50%) rotate(-45deg);}
 			&:after{transform: translate(-50%, -50%) rotate(45deg);}
 		}
+		&-add{
+			position: absolute;
+			bottom: 1.3rem;
+			right: 1.5rem;
+			font-size: 1.2rem;
+			opacity: .5;
+			font-weight: 400;
+			&:hover{opacity: 1;}
+		}
 		&-name,&-price,&-calc{
-			width: calc((100% - 13.6rem) / 3);
+			width: calc((100% - 20rem) / 3);
 			text-align: center;
+			padding: 0 2.5rem;
 		}
 		.jq-number{
 			display: block;
@@ -234,6 +245,57 @@
 			right: 0;
 			&:after{transform: rotate(90deg);}
 		}
+	}
+	&__order-btn{
+		width: 19.6rem;
+		height: 4rem;
+		line-height: 4rem;
+		font-size: 1.7rem;
+		font-weight: 400;
+	}
+	&__wrap{margin: 3.4rem 0 6.6rem;}
+	&__theader{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		text-align: center;
+		border-top: 1px solid #bbb;
+		border-bottom: 1px solid #bbb;
+		line-height: 6.7rem;
+		font-size: 1.7rem;
+		font-weight: 600;
+		margin-bottom: 1.6rem;
+	}
+	&__th{
+		&--1{width: 13.7rem;}
+		&--5{width: 20rem;}
+		&--2,&--3,&--4{width: calc((100% - 33.7rem) / 3);}
+	}
+	&__group{
+		border-bottom: 1px solid #bbb;
+		margin-bottom: 1.6rem;
+		padding-bottom: 1.6rem;
+		&:last-child{
+			border-bottom: none;
+			padding-bottom: 0;
+		}
+	}
+	&__footer{
+		border-top: 3px solid #000;
+		background: #efefef;
+		padding: 0 2.6rem;
+		&-summ{
+			text-align: right;
+			font-size: 1.7rem;
+			font-weight: 400;
+			line-height: 6rem;
+			margin-bottom: 2rem;
+		}
+	}
+	&__bar{
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
 	}
 }
 
@@ -335,7 +397,6 @@
 			&-main{
 				width: calc(100% - 9.5rem);
 				display: block;
-				padding-top: 1.6rem;
 			}
 			&-bar{
 				width: 100%;
@@ -353,10 +414,58 @@
 			&-name,&-price,&-calc{
 				width: 100%;
 				text-align: left;
-				padding-right: 2rem;
+				padding: 0 2rem 0 0;
 				margin-bottom: .6rem;
 			}
-			&-calc{display: none;}
+			&-calc{padding-top: .4rem;}
+			&-del{right: 0;}
+			&-add{
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 100%;
+				height: 3.7rem;
+				line-height: 3.5rem;
+				text-align: center;
+				font-weight: 300;
+				border: 1px solid #bcbcbc;
+				&:hover{opacity: 1;}
+			}
+			&-summ{display: none;}
+			.jq-number{
+				margin: 0;
+				width: 9rem;
+			}
+			.jq-number__field input{
+				font-size: 1.3rem;
+				height: 2rem;
+			}
+			.jq-number__spin{
+				height: 2rem;
+				width: 1.5rem;
+			}
 		}
+		&__order-btn{width: 100%;}
+		&__wrap{margin: 0 0 5rem;}
+		&__theader{display: none;}
+		&__group{
+			margin-bottom: 2.3rem;
+			padding-bottom: 2.3rem;
+			&:last-child{padding-bottom: 0;}
+			&--no-pac{
+				.fav__item{
+					padding-bottom: 5.5rem;
+				}
+			}
+		}
+		&__footer{
+			padding: 0 3.4rem;
+			&-summ{
+				font-size: 1.5rem;
+				margin-bottom: 1.2rem;
+			}
+		}
+		&__bar{display: block;}
 	}
+	.article__header{.fav__order-btn{display: none;}}
 }
