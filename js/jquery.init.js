@@ -24,5 +24,39 @@ $(document).ready(function(){
 			}
 		]
 	});
+	
+	$('#js-gallery-slider').slick({
+	 	slidesToShow: 1,
+	 	slidesToScroll: 1,
+	 	arrows: true,
+	 	fade: true,
+		infinite: false,
+	 	asNavFor: '#js-gallery-carusel',
+        responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+                	arrows: false
+				}
+			}
+		]
+	});
+	$('#js-gallery-carusel').slick({
+	 	slidesToShow: 4,
+	 	slidesToScroll: 1,
+	 	asNavFor: '#js-gallery-slider',
+	 	dots: false,
+		infinite: false,
+	 	focusOnSelect: true,
+        responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+                	arrows: true,
+					slidesToShow: 3
+				}
+			}
+		]
+	});
  
 });

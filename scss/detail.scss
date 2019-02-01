@@ -1,0 +1,355 @@
+.detail{
+	margin: 3.5rem 0 1.7rem;
+	&__header{
+		width: 50%;
+		padding-left: 2.5rem;
+		float: right;
+		margin-bottom: 2rem;
+	}
+	&__name{
+		margin-bottom: .8rem;
+		font-size: 3.5rem;
+		font-weight: 400;
+	}
+	&__desc{
+		font-size: 1.7rem;
+		font-weight: 300;
+		opacity: .7;
+		margin-bottom: 2.5rem;
+	}
+	&__price{
+		font-weight: 600;
+		font-size: 2.5rem;
+	}
+	&__gallery{
+		width: 50%;
+		float: left;
+		padding-right: 2.5rem;
+		max-width: 54rem;		
+	}
+	&__slider{
+		position: relative;
+		margin-bottom: 1rem;
+		.slick-arrow{
+			top: 50%;
+			z-index: 6;
+			opacity: 1;
+			width: 3rem;
+			height: 11.5rem;
+			margin-top: -5.75rem;
+			background: center center no-repeat;
+			background-size: 2.9rem auto;
+		}
+		.slick-prev{
+			background-image: url(../img/main-slider/arrow-prev.png);
+			left: -4rem;
+		}
+		.slick-next{
+			background-image: url(../img/main-slider/arrow-next.png);
+			right: -4rem;
+		}
+	}
+	&__slide{
+		img{
+			&.zoomImg{
+				cursor: zoom-in;
+				&.zoomed{cursor: zoom-out;}
+			}
+		}		
+	}
+	&__carusel{
+		width: calc(100% + 1rem);
+		margin-left: -.5rem;
+		&-slide{
+			position: relative;
+			margin: 0 .5rem;
+		}
+	}
+	&__main{
+		width: 50%;
+		padding-left: 2.5rem;
+		float: right;
+	}
+	&__bar{
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		margin-bottom: 3.5rem;
+	}
+	&__calc{
+		margin-right: 4.5rem;
+		.jq-number{
+			display: block;
+			margin: 0 auto;
+			width: 11.1rem;
+			position: relative;
+		}
+		.jq-number__field{width: 100%;}
+		.jq-number__field input{
+			display: block;
+			width: 4.3rem;
+			text-align: center;
+			background: #fff;
+			outline: none;
+			height: 2.3rem;
+			padding: 0;
+			border: 1px solid #bbbbbd;
+			font-size: 1.6rem;
+			color: #000;
+			margin: 0 auto;
+		}
+		.jq-number__spin{
+			position: absolute;
+			top: 0;
+			width: 1.8rem;
+			height: 2.3rem;
+			cursor: pointer;
+			&:before, &:after{
+				content: '';
+				display: block;
+				width: 100%;
+				height: 1px;
+				background: #bbbbbd;
+				position: absolute;
+				top: 50%;
+				left: 0;
+			}
+			&:hover{
+				&:before, &:after{background: #000;}
+			}
+		}
+		.jq-number__spin.minus{
+			left: 0;
+		}
+		.jq-number__spin.plus{
+			right: 0;
+			&:after{transform: rotate(90deg);}
+		}
+	}
+	&__tools{
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	&__shopcart{
+		margin-left: 1.5rem;
+		padding: 0 2rem;
+		height: 4rem;
+		line-height: calc(4rem - 2px);
+		font-size: 1.7rem;
+	}
+	&__personal{
+		margin-bottom: 3.2rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&-txt{
+			font-size: 1.7rem;
+			font-weight: 300;
+			padding-right: 2rem;
+		}
+		&-btn{
+			width: 21rem;
+			height: 4.8rem;
+			line-height: calc(4.8rem - 2px);
+			font-size: 1.7rem;
+		}
+	}
+	&__accordion{
+		margin-bottom: 3.4rem;
+		&-title{
+			border-top: 1px solid #bbb;
+			padding: 3rem 0;
+			position: relative;
+			font-size: 400;
+			font-size: 1.7rem;
+			cursor: pointer;
+			&:before, &:after{
+				content: '';
+				display: block;
+				width: 2.7rem;
+				height: 1px;
+				background-color: #858585;
+				position: absolute;
+				top: 50%;
+				right: 2.2rem;
+    			transition: transform .25s ease;    
+			}
+			&:before{transform: rotate(90deg);}
+			&.open{
+				&:before{transform: rotate(0);}
+			}
+		}
+		&-main{
+			display: none;
+			font-size: 1.7rem;
+			font-weight: 300;
+			padding-bottom: 3.6rem;
+		}
+	}
+	&__soc{
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		li{
+			a{
+				display: block;
+				width: 3.7rem;
+				height: 3.7rem;
+				margin: 0 1.8rem 0 0;				
+			}
+		}
+		&-link{
+			opacity: .7;
+			svg{transition: fill .25s ease;}
+			&:hover{opacity: 1;}
+			&--pinterest:hover{svg{fill: #bd081c;}}
+			&--instagram:hover{svg{fill: #fd1d1d;}}
+			&--telegram:hover{svg{fill: #08c;}}
+			&--facebook:hover{svg{fill: #4267b2;}}
+			&--whatsapp:hover{svg{fill: #0cc243;}}
+		}
+	}	
+}
+
+@media only screen and (max-width : 1023px){
+	.detail{
+		&__gallery{padding-left: 2.5rem;}
+	}
+}
+@media only screen and (max-width : 767px){
+	.detail{
+		margin: 1.5rem 0 3rem;
+		&__header{
+			width: 100%;
+			padding-left: 0;
+			float: none;
+			margin-bottom: 1.2rem;
+		}
+		&__name{
+			font-size: 2.5rem;
+		}
+		&__desc{
+			font-size: 1.3rem;
+			margin-bottom: .8rem;
+		}
+		&__price{
+			font-size: 1.8rem;
+		}
+		&__gallery{
+			width: 100%;
+			float: none;
+			padding: 0;
+			max-width: 100%;
+			margin-bottom: 2.8rem;
+		}
+		&__slider{
+			margin-bottom: 1.5rem;			
+		}
+		&__carusel{
+			width: 24.4rem;
+			margin-left: 0;
+			position: relative;
+			padding: 0 2.5rem;
+			margin: 0 auto;
+			.slick-arrow{
+				width: 1rem;
+				height: 100%;
+				margin-top: 0;
+				top: 0;
+				background: center center no-repeat;
+				background-size: 1rem auto;
+			}
+			.slick-prev{
+				background-image: url(../img/main-slider/arrow-prev.png);
+				left: 0;
+			}
+			.slick-next{
+				background-image: url(../img/main-slider/arrow-next.png);
+				right: 0;
+			}
+		}
+		&__main{
+			width: 100%;
+			padding-left: 0;
+			float: none;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+		}
+		&__bar{
+			justify-content: space-between;
+			margin-bottom: 2.6rem;
+			order: -2;
+			width: 100%;
+		}
+		&__calc{
+			margin-right: 0;
+		}
+		&__shopcart{
+			padding: 0 1.6rem;
+			height: 3.2rem;
+			line-height: calc(3.2rem - 2px);
+			font-size: 1.4rem;
+		}
+		&__fav{
+			background: url(../img/icons/heart-black.png) center center no-repeat;
+			background-size: 3rem auto;
+			width: 3.2rem;
+			font-size: 0;
+			border: none;
+			&.active{background-image: url(../img/icons/heart-pink.png);}
+		}
+		
+		&__personal{
+			border-top: 1px solid #bbb;
+			margin-bottom: 2rem;
+			display: block;
+			text-align: center;
+			width: 100%;
+			padding-top: .7rem;
+			&-txt{
+				font-size: 1.3rem;
+				padding-right: 0;
+				margin-bottom: 1.2rem;
+			}
+			&-btn{
+				width: 17rem;
+				margin: 0 auto;
+				height: 3.2rem;
+				line-height: calc(3.2rem - 2px);
+				font-size: 1.3rem;
+			}
+		}
+		&__accordion{
+			margin-bottom: 0;
+			&-title{
+				padding: 2.1rem 0;
+				font-size: 1.4rem;
+				&:before, &:after{
+					width: 2.2rem;
+					right: 0;   
+				}
+			}
+			&-main{
+				font-size: 1.4rem;
+				padding-bottom: 2rem;
+			}
+		}
+		&__share{
+			width: 100%;
+			order: -1;
+		}
+		&__soc{			
+			width: 100%;
+			justify-content: center;
+			margin-bottom: 1.8rem;
+			li{
+				a{
+					margin: 0 .9rem;				
+				}
+			}
+		}	
+	}
+}
