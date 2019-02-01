@@ -4,7 +4,6 @@ $(document).ready(function(){
 		
 		var headerHeight = ($('#js-header').innerHeight() + 50),
 			scrollTop = $(window).scrollTop();
-		console.log(headerHeight, scrollTop);
 		if(scrollTop > headerHeight){
 			$('#js-header-fix').addClass('fix');
 		} else{
@@ -73,5 +72,66 @@ $(document).ready(function(){
             iframe.removeAttr("src");
         });
     }
+	
+	
+ /*кнопка скролл*/
+     $('.js-menu-item').click(function(e){
+         e.preventDefault();
+         var anchor = $(this).attr("href");
+         var scroll_el = $(anchor);
+         if ($(scroll_el).length != 0) { 
+             $('html, body').animate({ scrollTop: $(scroll_el).offset().top}, 250); 
+         }
+     });
+ 
+ 
+	/*fix menu*/
+	if($(window).width() > 767){
+		var lastPos = $(window).scrollTop(),
+			newPos = lastPos;
+		$(window).on('scroll', function(){
+			var headerHeight = ($('#js-header').innerHeight() + 50),
+				fixHeaderHeight = $('#js-header-fix').innerHeight(),
+				footerHeight = $('.footer').innerHeight(),
+				docHeight = $(document).height(),
+				windHeight = $(window).height(),
+				mainHeight = docHeight - footerHeight,
+				scrollTop = $(window).scrollTop();
+			lastPos = newPos;
+			newPos = $(window).scrollTop();
+			
+			if((scrollTop > (headerHeight)) && ((scrollTop + windHeight) < (mainHeight - 20))){
+				if(newPos > lastPos){
+					console.log('Down');
+					$('#js-filter').removeClass('bot').removeClass('fix-up').addClass('fix-down').css({
+						top: fixHeaderHeight + 'px',
+						height: windHeight - fixHeaderHeight + 'px',
+						bottom: 'auto'
+					});//.scrollTop(1000);
+					
+					
+					;
+				} else{
+					console.log('Up');
+					$('#js-filter').removeClass('bot').removeClass('fix-down').addClass('fix-up').css({
+						top: fixHeaderHeight + 'px',
+						height: windHeight - fixHeaderHeight + 'px',
+						bottom: 'auto'
+					});//.scrollTop(0);
+				}
+				
+			} 
+			else if ((scrollTop + windHeight) >= (mainHeight - 20)){
+				$('#js-filter').addClass('bot').removeClass('fix-down').removeClass('fix-up').removeAttr('style').css({
+					top: 'auto',
+					height: windHeight - fixHeaderHeight + 'px',
+					bottom: 20 + 'px'
+				}).scrollTop(1000);
+			} 
+			else{
+				$('#js-filter').removeClass('fix-down').removeClass('fix-up').removeClass('bot').removeAttr('style');
+			}
+		});
+	}
 	
 });
