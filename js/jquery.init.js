@@ -24,6 +24,21 @@ $(document).ready(function(){
 			}
 		]
 	});
+	$('#js-carusel-popup').slick({
+    	slidesToShow: 4,
+    	slidesToScroll: 1,
+    	arrows: true,
+    	dots: false,
+    	infinite: true,
+        responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+                	slidesToShow: 1
+				}
+			}
+		]
+	});
 	
 	$('#js-gallery-slider').slick({
 	 	slidesToShow: 1,
