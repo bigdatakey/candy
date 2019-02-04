@@ -1,5 +1,5 @@
 .catalog{
-	margin: 0 auto 3.6rem;
+	margin: -2rem auto 3.6rem;
 	max-width: 192rem;
 	width: 100%;
 	display: flex;
@@ -21,6 +21,8 @@
 	&__filter{
 		font-family: $opensans;
 		width: 100%;
+		padding-bottom: 2rem;
+		padding-top: 2rem;
 		&-group{
 			margin-bottom: 5rem;
 			&:last-child{margin-bottom: 0;}
@@ -88,28 +90,21 @@
 				border: 1px solid #000;
 			}
 		}
-		&.fix-up,
-		&.fix-down{
-			padding: 20px 0;
+		&.fix{
 			position: fixed;
 			width: 22rem;
-			overflow-y: auto;
 			transition: padding .25s ease;
-			&::-webkit-scrollbar { width: 0; }
-			ms-overflow-style: none;
-			overflow: -moz-scrollbars-none;
 		}
 		&.bot{
 			position: absolute;
 			width: 22rem;
-			overflow-y: auto;
-			&::-webkit-scrollbar { width: 0; }
-			ms-overflow-style: none;
-			overflow: -moz-scrollbars-none;
+			bottom: 0 !important;
+			top: auto !important;
 		}
 	}
 	&__main{
 		width: calc(100% - 32rem);
+		padding-top: 2rem;
 		&-bar{
 			display: flex;
 			align-items: center;
