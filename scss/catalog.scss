@@ -197,7 +197,6 @@
 					top: 0;
 					left: 0;
 					width: 100%;
-					transition: opacity .25s ease;
 					&:first-child{	opacity: 1;}
 					&:last-child{	opacity: 0;}
 				}
@@ -322,7 +321,7 @@
 			opacity: 0;
 		}
 		&-main{
-			text-align: center;
+			text-align: left;
 			font-family: $opensans;
 			padding-top: 1.2rem;
 		}
@@ -330,11 +329,17 @@
 			color: #000;
 			display: block;
 			font-size: 2rem;
-			margin-bottom: .5rem;
+			margin-bottom: .3rem;
 			font-weight: bold;
+		}
+		&-desc{
+			font-size: 1.8rem;
+			font-weight: 400;
+			margin-bottom: 1.4rem;
 		}
 		&-price{
 			font-size: 1.8rem;
+			font-weight: bold;
 		}
 	}
 }
