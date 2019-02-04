@@ -106,47 +106,56 @@ $(document).ready(function(){
 					filterHeight = jsFilter.height(),
 					filterBot = filterPos + filterHeight,
 					scrollTop = $(window).scrollTop();
-				lastPos = newPos;
-				newPos = $(window).scrollTop();
-				
-				var newWinPos = scrollTop,
-					winStep = newWinPos - lastWinPos;				
-				lastWinPos = newWinPos;
-				
-				if(((windPos + fixHeaderHeight) >= catalogPos) && (windBot <= catalogBot) ){
-					
-					if(newPos > lastPos){
-						//down
-						if(filterBot >= windBot){
-							lastWinPath = lastWinPath + winStep;
-							jsFilter.removeClass('bot').addClass('fix').removeAttr('style').css({
-								top: -lastWinPath + fixHeaderHeight + 'px'
-							});
-						} else {
-							jsFilter.removeClass('bot').addClass('fix').removeAttr('style').css({
-								top: 'auto',
-								bottom: 1 + 'px'
-							});
-						}
-					} else{
-						//up
-						if( (filterPos) <= (windPos + fixHeaderHeight) ){
-							lastWinPath = lastWinPath + winStep;
-							jsFilter.removeClass('bot').addClass('fix').removeAttr('style').css({
-								top: -lastWinPath + fixHeaderHeight + 'px'
-							});
+				if(filterHeight > (windHeight - fixHeaderHeight)){
+					if(((windPos + fixHeaderHeight) >= catalogPos) && (windBot <= catalogBot) ){
+
+						if(newPos > lastPos){
+							//down
+							if(filterBot >= windBot){
+								lastWinPath = lastWinPath + winStep;
+								jsFilter.removeClass('bot').addClass('fix').removeAttr('style').css({
+									top: -lastWinPath + fixHeaderHeight + 'px'
+								});
+							} else {							
+								jsFilter.removeClass('bot').addClass('fix').removeAttr('style').css({
+									top: 'auto',
+									bottom: 1 + 'px'
+								});
+							}
 						} else{
-							jsFilter.removeClass('bot').addClass('fix').removeAttr('style').css({
-								top: fixHeaderHeight + 1 + 'px'
-							});
+							//up
+							if( (filterPos) <= (windPos + fixHeaderHeight) ){
+								lastWinPath = lastWinPath + winStep;
+								jsFilter.removeClass('bot').addClass('fix').removeAttr('style').css({
+									top: -lastWinPath + fixHeaderHeight + 'px'
+								});
+							} else{
+								jsFilter.removeClass('bot').addClass('fix').removeAttr('style').css({
+									top: fixHeaderHeight + 1 + 'px'
+								});
+							}
 						}
 					}
-				}
-				else if (windBot > catalogBot){
-					jsFilter.addClass('bot').removeClass('fix');
+					else if (windBot > catalogBot){
+						jsFilter.addClass('bot').removeClass('fix');
+					}
+					else{
+						jsFilter.removeClass('fix').removeClass('bot').removeAttr('style');
+					}
 				}
 				else{
-					jsFilter.removeClass('fix').removeClass('bot').removeAttr('style');
+					if(((windPos + fixHeaderHeight) >= catalogPos) && (filterBot < catalogBot) ){
+
+						jsFilter.removeClass('bot').addClass('fix').removeAttr('style').css({
+							top: fixHeaderHeight + 'px'
+						});
+					}
+					else if (filterBot >= catalogBot){
+						jsFilter.addClass('bot').removeClass('fix');
+					}
+					else{
+						jsFilter.removeClass('fix').removeClass('bot').removeAttr('style');
+					}
 				}
 
 			});
