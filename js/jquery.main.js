@@ -93,6 +93,7 @@ $(document).ready(function(){
 				lastWinPos = lastPos,
 				jsFilter = $('#js-filter'),
 				lastWinPath = 0,
+				winStep = 0,
 				newPos = lastPos;
 			$(window).on('scroll', function(){
 				var headerHeight = ($('#js-header').innerHeight() + 50),
@@ -106,7 +107,11 @@ $(document).ready(function(){
 					filterHeight = jsFilter.height(),
 					filterBot = filterPos + filterHeight,
 					scrollTop = $(window).scrollTop();
-				if(filterHeight > (windHeight - fixHeaderHeight)){
+				
+				
+				newPos = $(window).scrollTop();
+				winStep = newPos - lastPos;
+				if((filterHeight + 50) > (windHeight - fixHeaderHeight)){
 					if(((windPos + fixHeaderHeight) >= catalogPos) && (windBot <= catalogBot) ){
 
 						if(newPos > lastPos){
@@ -135,6 +140,7 @@ $(document).ready(function(){
 								});
 							}
 						}
+						lastPos = newPos;
 					}
 					else if (windBot > catalogBot){
 						jsFilter.addClass('bot').removeClass('fix');
@@ -144,14 +150,14 @@ $(document).ready(function(){
 					}
 				}
 				else{
-					if(((windPos + fixHeaderHeight) >= catalogPos) && (filterBot < catalogBot) ){
+					if(((windPos + fixHeaderHeight) >= catalogPos) && (filterBot < (catalogBot - 20)) ){
 
 						jsFilter.removeClass('bot').addClass('fix').removeAttr('style').css({
 							top: fixHeaderHeight + 'px'
 						});
 					}
-					else if (filterBot >= catalogBot){
-						jsFilter.addClass('bot').removeClass('fix');
+					else if (filterBot >= (catalogBot - 20)){
+						jsFilter.addClass('bot').removeClass('fix').removeAttr('style');
 					}
 					else{
 						jsFilter.removeClass('fix').removeClass('bot').removeAttr('style');

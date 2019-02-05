@@ -98,13 +98,14 @@
 		&.bot{
 			position: absolute;
 			width: 22rem;
-			bottom: 0 !important;
+			bottom: 2rem !important;
 			top: auto !important;
 		}
 	}
 	&__main{
 		width: calc(100% - 32rem);
 		padding-top: 2rem;
+		//padding-bottom: 2rem;
 		&-bar{
 			display: flex;
 			align-items: center;
