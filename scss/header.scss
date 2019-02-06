@@ -72,14 +72,60 @@
 		margin-right: 2.4rem;
 		background: url(../img/icons/shopping-bag.svg) center 0 no-repeat;
 		background-size: 100% auto;
-		font-size: 0;
+		position: relative;
+		color: #000;
+		z-index: 6;
+		&:hover{
+			opacity: 1 !important;
+			.header__shopcart-hide{display: block;}
+		}
 		span{
 			color: #fff;
 			display: block;
 			font-size: 1.7rem;
-			padding: 1.1rem .3rem 0 0;
+			padding: 1.2rem .3rem 0 0;
 			text-align: center;
+			position: relative;
+			z-index: 3;
 		}
+		&-hide{
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 29rem;
+			padding-top: 6.2rem;
+			display: none;
+		}
+		&-blc{
+			background: #fff;
+			padding: 3rem 3rem 2.5rem;
+			box-shadow: 0 0 3px 0 rgba(0, 0, 0, .18);
+		}
+		&-item{
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			margin-bottom: 1.1rem;
+			&-pic{
+				width: 7.5rem;
+				margin-right: 1.5rem;
+			}
+			&-main{
+				width: calc(100% - 9rem);
+				font-size: 1.2rem;
+				font-weight: 300;
+				line-height: 1.5;
+			}			
+		}
+		&-bar{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			font-size: 1.2rem;
+		}
+		&-calc{font-weight: 300;}
+		&-summ{font-weight: 600;}
 	}
 	&__like{
 		display: block;
@@ -359,8 +405,9 @@
 			margin-right: 0;
 			span{
 				font-size: 1.5rem;
-				padding: .9rem 0 0 1rem;
+				padding: .8rem 0 0 0;
 			}
+			&-hide{display: none !important;}
 		}
 		&__like{display: none;}
 		&__search{display: none;}
