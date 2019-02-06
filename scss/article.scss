@@ -18,7 +18,10 @@
 		justify-content: space-between;
 		h1,h2{margin-bottom: 0;}
 	}
-	p{margin: 2rem 0;}
+	p{
+		margin: 2rem 0;
+		font-weight: 300;
+	}
 	&__pic{
 		width: 100%;
 		margin-top: 4.5rem;
@@ -67,6 +70,33 @@
 		width: 23.2rem;
 		margin-top: .8rem;
 	}
+	&__sec{
+		margin-bottom: 9rem;
+		&:last-child{margin-bottom: 0;}
+		h2{
+			text-align: center;
+			font-size: 2.3rem;
+			font-weight: 400;
+			margin: 6rem 0 1rem;
+		}
+		&-center{
+			text-align: center;
+			font-size: 2rem;
+			font-weight: 300;
+			margin-bottom: 1.7rem;
+		}
+		&-bar{
+			margin-top: 2.6rem;
+			&-btn{
+				margin: 0 auto;
+				width: 26rem;
+				height: 4rem;
+				line-height: calc(4rem - 2px);
+				font-size: 1.7rem;
+				font-weight: 400;
+			}
+		}
+	}
 }
 .contacts{
 	font-size: 2.3rem;
@@ -83,6 +113,12 @@
 			margin-bottom: 2rem;
 			font-size: 2.5rem;
 			text-align: center;
+		}
+		&__sec{
+			h2{
+				font-size: 2.2rem;
+				margin-top: 4rem;
+			}
 		}
 		&__header{
 			display: block;

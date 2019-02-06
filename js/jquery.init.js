@@ -80,5 +80,21 @@ $(document).ready(function(){
 			}
 		]
 	});
- 
+
+    if ($('.js-gallery').length){
+    $('.js-gallery').colorbox({ opacity:.7 , rel:'carusel_img', current: false });
+		$.colorbox.settings.maxWidth  = '95%';
+		var resizeTimer;
+		function resizeColorBox(){
+		  if (resizeTimer) clearTimeout(resizeTimer);
+		  resizeTimer = setTimeout(function() {
+			if ($('#cboxOverlay').is(':visible')) {
+						$.colorbox.load(true);
+			}
+		  }, 300);
+		} 
+		$(window).resize(resizeColorBox);
+		window.addEventListener("orientationchange", resizeColorBox, false);
+	}
+    
 });

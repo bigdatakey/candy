@@ -30,6 +30,7 @@
 	&__slider{
 		position: relative;
 		margin-bottom: 1rem;
+		.slick-slide{height: 100%;}
 		.slick-arrow{
 			top: 50%;
 			z-index: 6;
@@ -131,11 +132,24 @@
 		align-items: center;
 		justify-content: flex-end;
 	}
+	&__candy-tools{
+		padding-bottom: 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
 	&__shopcart{
 		margin-left: 1.5rem;
 		padding: 0 2rem;
 		height: 4rem;
 		line-height: calc(4rem - 2px);
+		font-size: 1.7rem;
+	}
+	&__candy-shopcart{
+		margin-right: 2.5rem;
+		width: 21rem;
+		height: 5rem;
+		line-height: calc(5rem - 2px);
 		font-size: 1.7rem;
 	}
 	&__personal{
@@ -279,7 +293,7 @@
 			justify-content: flex-start;
 		}
 		&__bar{
-			justify-content: space-between;
+			justify-content: center;
 			margin-bottom: 2.6rem;
 			order: -2;
 			width: 100%;
@@ -293,13 +307,14 @@
 			line-height: calc(3.2rem - 2px);
 			font-size: 1.4rem;
 		}
+		&__candy-fav,
 		&__fav{
-			background: url(../img/icons/heart-black.png) center center no-repeat;
+			background: url(../img/icons/heart-black.svg) center center no-repeat;
 			background-size: 3rem auto;
 			width: 3.2rem;
 			font-size: 0;
 			border: none;
-			&.active{background-image: url(../img/icons/heart-pink.png);}
+			&.active{background-image: url(../img/icons/heart-pink.svg);}
 		}
 		
 		&__personal{

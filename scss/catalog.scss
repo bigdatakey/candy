@@ -222,11 +222,11 @@
     			transition: opacity .25s ease;    
 			}
 			&:before{
-				background-image: url(../img/icons/heart-black.png);
+				background-image: url(../img/icons/heart-black.svg);
 				opacity: 1;
 			}
 			&:after{
-				background-image: url(../img/icons/heart-pink.png);
+				background-image: url(../img/icons/heart-pink.svg);
 				opacity: 0;
 			}
 			&:hover, &.active{

@@ -94,12 +94,18 @@
 }
 .detail__slide{
 	.video-blind{
+		padding-top: 125%;
+		&:before{
+			width: 20%;
+			height: 0;
+			padding-top: 20%;
+		}
 		&:after{
-			border-left: 4rem solid #fff;
-			border-right: 4rem solid transparent;
-			border-top: 2.4rem solid transparent;
-			border-bottom: 2.4rem solid transparent;
-			margin-left: 2.6rem;
+			border-left: 3rem solid #fff;
+			border-right: 3rem solid transparent;
+			border-top: 1.9rem solid transparent;
+			border-bottom: 1.9rem solid transparent;
+			margin-left: 2rem;
 		}
 	}
 }
