@@ -83,7 +83,6 @@
                 	</div>
                 	<a href="/" class="header__logo-group">
                 		<img src="img/header/logobig.svg" alt="Candy Couture">
-                		<span class="header__logo-txt">праздник со вкусом</span>
                 	</a>
                 </div>
             </div>            
@@ -244,7 +243,7 @@
 									</label>									
 									<label class="profile-form__label">
 										<span class="profile-form__label-name">Дата доставки:</span>
-										<input type="date" class="profile-form__input" name="date">
+										<input type="date" class="profile-form__input" name="date" ng-click="opened=!opened">
 									</label>
 									<label class="profile-form__label">
 										<span class="profile-form__label-name">Время доставки:</span>
@@ -274,7 +273,7 @@
 								</form>
 							</div>
            				</div>
-           				<div class="profile-order__map">
+           				<div class="profile-order__map profile-order__map--desc">
            					<div class="map" id="map"></div>
            				</div>
            			</div>
@@ -283,6 +282,9 @@
            			</div>
            			<div class="fav__bar">
            				<a href="#" class="btn btn--black fav__order-btn">Оплатить</a>
+           			</div>
+           			<div class="profile-order__map profile-order__map--mob">
+           				<div class="map" id="map-mob"></div>
            			</div>
            		</div>
            	</section>     
@@ -541,12 +543,18 @@
     <script>
         ymaps.ready(init);
         var map;						
+        var mapMob;						
         function init(){     
             map = new ymaps.Map("map", {
                 center: [55.418487, 37.839977],
                 zoom: 16
             });
+			mapMob = new ymaps.Map("map-mob", {
+                center: [55.418487, 37.839977],
+                zoom: 16
+            });
             map.behaviors.disable('scrollZoom');
+            mapMob.behaviors.disable('scrollZoom');
             placemark = new ymaps.Placemark(
                 [55.418487, 37.839977],
                 { 
@@ -557,7 +565,18 @@
                     preset: 'islands#redDotIconWithCaption'
                 }
             );
+			placemarkMob = new ymaps.Placemark(
+                [55.418487, 37.839977],
+                { 
+                    iconCaption: '',
+                    balloonContent: ''
+                },
+                {
+                    preset: 'islands#redDotIconWithCaption'
+                }
+            );
             map.geoObjects.add(placemark);
+            mapMob.geoObjects.add(placemarkMob);
         };        
     </script>
 </body>

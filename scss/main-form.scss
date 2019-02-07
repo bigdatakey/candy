@@ -49,7 +49,8 @@
 	}
 	&__submit{
 		margin: 0 auto;
-		width: 15.4rem;
+		width: 100%;
+		max-width: 41rem;
 		height: 4rem;
 		line-height: calc(4rem - 2px);
 		font-size: 1.7rem;

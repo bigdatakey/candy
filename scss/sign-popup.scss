@@ -124,6 +124,8 @@
 		display: inline-block;
 		margin: .7rem auto 0;
 		min-width: 15.3rem;
+		width: 100%;
+		max-width: 33.2rem;
 		padding: 0 2.6rem;
 		height: 4rem;
 		line-height: 3.6rem;
@@ -178,9 +180,10 @@
 		}
 		&-btn{
 			margin: 4rem auto 0;
-			width: 27rem;
-			height: 5.2rem;
-			line-height: calc(5.2rem - 2px);
+			width: 100%;
+			max-width: 33.2rem;
+			height: 4rem;
+			line-height: calc(4rem - 2px);
 			font-size: 1.7rem;
 			font-weight: 400;
 		}

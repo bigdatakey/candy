@@ -133,7 +133,6 @@
 		justify-content: flex-end;
 	}
 	&__candy-tools{
-		padding-bottom: 1rem;
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
@@ -148,8 +147,8 @@
 	&__candy-shopcart{
 		margin-right: 2.5rem;
 		width: 21rem;
-		height: 5rem;
-		line-height: calc(5rem - 2px);
+		height: 4rem;
+        line-height: calc(4rem - 2px);
 		font-size: 1.7rem;
 	}
 	&__personal{
@@ -173,7 +172,7 @@
 		margin-bottom: 3.4rem;
 		&-title{
 			border-top: 1px solid #bbb;
-			padding: 3rem 0;
+			padding: 1.4rem 0;
 			position: relative;
 			font-size: 400;
 			font-size: 1.7rem;
@@ -181,12 +180,12 @@
 			&:before, &:after{
 				content: '';
 				display: block;
-				width: 2.7rem;
+				width: 2rem;
 				height: 1px;
 				background-color: #858585;
 				position: absolute;
 				top: 50%;
-				right: 2.2rem;
+				right: 2rem;
     			transition: transform .25s ease;    
 			}
 			&:before{transform: rotate(90deg);}
@@ -199,6 +198,9 @@
 			font-size: 1.7rem;
 			font-weight: 300;
 			padding-bottom: 3.6rem;
+		}
+		&-item{
+			&:last-child{border-bottom: 1px solid #bbb;}
 		}
 	}
 	&__soc{
@@ -293,28 +295,38 @@
 			justify-content: flex-start;
 		}
 		&__bar{
-			justify-content: center;
-			margin-bottom: 2.6rem;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			align-items: center;
+			margin-bottom: 1.6rem;
 			order: -2;
 			width: 100%;
 		}
 		&__calc{
 			margin-right: 0;
+			order: 1
 		}
 		&__shopcart{
 			padding: 0 1.6rem;
 			height: 3.2rem;
 			line-height: calc(3.2rem - 2px);
 			font-size: 1.4rem;
+			width: 100%;
+			margin: 0;
+			margin-top: 1rem;
+			order: 3;
 		}
 		&__candy-fav,
 		&__fav{
-			background: url(../img/icons/heart-black.svg) center center no-repeat;
-			background-size: 3rem auto;
-			width: 3.2rem;
-			font-size: 0;
-			border: none;
-			&.active{background-image: url(../img/icons/heart-pink.svg);}
+			width: 50%;
+			margin-top: 0;
+			order: 2;
+//			background: url(../img/icons/heart-black.svg) center center no-repeat;
+//			background-size: 3rem auto;
+//			width: 3.2rem;
+//			font-size: 0;
+//			border: none;
+			//&.active{background-image: url(../img/icons/heart-pink.svg);}
 		}
 		
 		&__personal{
@@ -330,7 +342,7 @@
 				margin-bottom: 1.2rem;
 			}
 			&-btn{
-				width: 17rem;
+				width: 20.2rem;
 				margin: 0 auto;
 				height: 3.2rem;
 				line-height: calc(3.2rem - 2px);

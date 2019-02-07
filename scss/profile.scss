@@ -90,7 +90,7 @@
 	}
 	&__submit{
 		margin: 0 auto;
-		width: 19rem;
+		width: 100%;
 		height: 4rem;
 		line-height: 3.2rem;
 		font-size: 1.7rem;
@@ -387,6 +387,7 @@
 	&__map{
 		width: calc(100% - 59rem);
 		.map{height: 100%;}
+		&--mob{display: none;}
 	}
 }
 
@@ -582,7 +583,9 @@
 			}
 		}
 		&__footer{
-			padding: 0 3.4rem;
+			padding: 0 1.5rem;
+			width: calc(100% + 3rem);
+			margin-left: -1.5rem;
 			&-summ{
 				font-size: 1.5rem;
 				margin-bottom: 1.2rem;
@@ -601,6 +604,8 @@
 			margin-top: 3rem;
 			height: 32rem;
 			.map{height: 100%;}
+			&--mob{display: block;}
+			&--desc{display: none;}
 		}
 	}
 }

@@ -72,17 +72,18 @@
 				.catalog__item-main{opacity: 1;}
 			} 
 			.slick-arrow{
+				height: calc(100% - 5rem);
 				width: 2.3rem;
 				margin-top: 0;
 				background-size: contain;
 			}
 			.slick-prev{
 				width: 2.3rem;
-				background-position: center 38%;
+				background-position: center center;
 			}
 			.slick-next{
 				width: 2.3rem;
-				background-position: center 38%;
+				background-position: center center;
 			}
 		}
 		&__slide{

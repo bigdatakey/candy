@@ -131,6 +131,9 @@ img{
 	font-size: 0;
 }
 
+input::-webkit-inner-spin-button { display: none; }
+input::-webkit-calendar-picker-indicator { background: none; }
+
 @media only screen and (max-width : 1479px){html{font-size: 7.5px;}}
 @media only screen and (max-width : 1366px){html{font-size: 7px;}}
 @media only screen and (max-width : 991px){html{font-size: 6.5px;}}

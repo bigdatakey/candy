@@ -470,12 +470,16 @@
 					height: auto;
 					line-height: 1.2;
 					font-size: 1.6rem;
+					&:after{display: none !important;}
 				}
-				&:after{display: none;}
+				&:hover{
+					a:after{display: none !important;}
+				}
+				
 			}
 		}
 		&__sublist{
-			display: none;
+			display: none !important;
 		}
 	}
 }
