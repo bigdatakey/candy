@@ -229,19 +229,36 @@
            						<div><div class="detail__slide js-zoom"><img src="img/pic-big.jpg" alt=""></div></div>
            						<div><div class="detail__slide js-zoom"><img src="img/pic-big.jpg" alt=""></div></div>
            						<div><div class="detail__slide js-zoom"><img src="img/pic-big.jpg" alt=""></div></div>
-           						<div><div class="detail__slide">
-           							<div class="video-blind video-blind js-blind" data-href="https://www.youtube.com/embed/Fo6rCkFrpe8"></div>
-           						</div></div>
+           						<div>
+           							<div class="detail__slide">
+           								<div class="detail__video">
+           									<video controls="controls" id="video" class="video">
+<!--											<source src="sintel-trailer.ogv" type='video/ogg; codecs="theora, vorbis"'>-->
+												<source src="video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+												
+												<source src="video/video.ogv" type='video/ogg; codecs="theora, vorbis"'>
+											    <source src="video/video.webm" type='video/webm; codecs="vp8, vorbis"'>
+											    Тег video не поддерживается вашим браузером. 
+											    <a href="video/video.mp4">Скачайте видео</a>.
+											</video>
+											<div class="video-blind js-blind" id="js-big-blind" onclick="$('#video')[0].play();$('#js-big-blind').fadeOut(250);"></div>
+           								</div>
+           								
+           							</div>
+           						</div>
            					</div>
            					<div class="detail__carusel" id="js-gallery-carusel">
            						<div><div class="detail__carusel-slide"><img src="img/pic.jpg" alt=""></div></div>
            						<div><div class="detail__carusel-slide"><img src="img/pic.jpg" alt=""></div></div>
            						<div><div class="detail__carusel-slide"><img src="img/pic.jpg" alt=""></div></div>
            						<div><div class="detail__carusel-slide"><img src="img/pic.jpg" alt=""></div></div>
-           						<div><div class="detail__carusel-slide">
-           							<div class="video-blind js-blind" data-href="https://www.youtube.com/embed/Fo6rCkFrpe8"></div>
-           						</div></div>
+           						<div>
+           							<div class="detail__carusel-slide">
+           								<div class="video-blind js-blind" onclick="$('#video')[0].play();$('#js-big-blind').fadeOut(250);"></div>
+           							</div>
+           						</div>
            					</div>
+<!--
            					<div class="video-wrapper" id="js-video-vrapper">
 								<div class="video-wrapper__overlay js-video-close"></div>
 								<div class="video-wrapper__container">
@@ -251,6 +268,7 @@
 									</div>
 								</div>
 							</div>
+-->
            				</div>
            				<div class="detail__main">           					
            					<div class="detail__bar">

@@ -49,32 +49,9 @@ $(document).ready(function(){
 	$('.js-accordion-title').on('click', function(){
 		$(this).toggleClass('open').next('.js-accordion-main').slideToggle(250);		
 	})
+		
 	
-	/*video popup*/
-    if($('#js-video-vrapper').length){
-        var iframe = $('#js-video-container iframe');
-        $('.js-blind').on('click', function(){
-            var winHeight = $(window).height() / 2,
-                blinPos = $(this).offset().top + ($(this).height() / 2),
-                scrollPos = blinPos - winHeight;
-            $('#js-video-vrapper').fadeIn(250).addClass('show');
-            $('html, body').animate({ scrollTop: scrollPos}, 250);
-            //$('html').add('body').addClass('no-scroll');
-            
-            
-            var srcAttr = $(this).attr('data-href');
-            iframe.attr("src", srcAttr + "?autohide=1&amp;autoplay=1");
-        });
-        
-        $('.js-video-close').on('click', function(){
-            $('#js-video-vrapper').fadeOut(250).removeClass('show');
-            //$('html').add('body').removeClass('no-scroll');
-            iframe.removeAttr("src");
-        });
-    }
-	
-	
- /*кнопка скролл*/
+ 	/*кнопка скролл*/
      $('.js-menu-item').click(function(e){
          e.preventDefault();
          var anchor = $(this).attr("href");
