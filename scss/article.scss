@@ -4,7 +4,7 @@
 	font-size: 2rem;
 	line-height: 1.15;
 	font-weight: 300;
-	a{
+	a:not(.btn){
 		font-weight: 400;
 		text-decoration: underline;
 		color: #000;
