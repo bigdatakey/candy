@@ -79,6 +79,7 @@
 	}
 	&__calc{
 		margin-right: 0;
+		flex-grow: 1;
 		.jq-number{
 			display: block;
 			margin: 0 auto;
