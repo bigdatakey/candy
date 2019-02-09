@@ -217,58 +217,166 @@
            	</div> 
            	<div class="article">
            		<div class="container">
-           			<h1>Избранное</h1>
+           			<div class="article__header">
+           				<h1>Избранное</h1>
+           				<div class="pagination">
+           					<a href="#" class="pagination__item active">1</a>
+           					<a href="#" class="pagination__item">2</a>
+           					<a href="#" class="pagination__item">3</a>
+           					<span>&#8230;</span>
+           					<a href="#" class="pagination__item">15</a>
+           					<a href="" class="pagination__next">Далее</a>
+           				</div>
+           			</div>
            		</div>
            	</div> 
            	<div class="fav">
            		<div class="container">
-           			<div class="fav__container">
-           				<div class="fav__pagination fav__pagination--top">
-           					<div class="pagination">
-           						<a href="#" class="pagination__item active">1</a>
-           						<a href="#" class="pagination__item">2</a>
-           						<a href="#" class="pagination__item">3</a>
-           						<span>&#8230;</span>
-           						<a href="#" class="pagination__item">15</a>
-           						<a href="" class="pagination__next">Далее</a>
-           					</div>
-           				</div>
+           			<div class="fav__container">           				
            				<div class="fav__wrap">
-           					<div class="fav__item">
-           						<a href="#" class="fav__item-pic"><img src="img/kex.jpg" alt=""></a>
-           						<div class="fav__item-main">
-           							<div class="fav__item-name">Маффины "Ягода"</div>
-           							<div class="fav__item-price">500 руб.</div>
-           							<div class="fav__item-calc"><input type="number" min="1" step="1" value="1"></div>
-           							<div class="fav__item-bar">
-           								<button class="btn btn--black fav__item-btn">В корзину</button>
-           								<button class="btn btn--del fav__item-del" title="Удалить">Удалить</button>
-           							</div>
-           						</div>
-           					</div>
-           					<div class="fav__item">
-           						<a href="#" class="fav__item-pic"><img src="img/kex.jpg" alt=""></a>
-           						<div class="fav__item-main">
-           							<div class="fav__item-name">Маффины "Ягода"</div>
-           							<div class="fav__item-price">500 руб.</div>
-           							<div class="fav__item-calc"><input type="number" min="1" step="1" value="1"></div>
-           							<div class="fav__item-bar">
-           								<button class="btn btn--black fav__item-btn">В корзину</button>
-           								<button class="btn btn--del fav__item-del" title="Удалить">Удалить</button>
-           							</div>
-           						</div>
-           					</div>
-           					<div class="fav__item">
-           						<a href="#" class="fav__item-pic"><img src="img/kex.jpg" alt=""></a>
-           						<div class="fav__item-main">
-           							<div class="fav__item-name">Маффины "Ягода"</div>
-           							<div class="fav__item-price">500 руб.</div>
-           							<div class="fav__item-calc"><input type="number" min="1" step="1" value="1"></div>
-           							<div class="fav__item-bar">
-           								<button class="btn btn--black fav__item-btn">В корзину</button>
-           								<button class="btn btn--del fav__item-del" title="Удалить">Удалить</button>
-           							</div>
-           						</div>
+           					<div class="fav__theader">
+								<div class="fav__th fav__th--1">Товар</div>
+								<div class="fav__th fav__th--2">Описание</div>
+								<div class="fav__th fav__th--3">Цена</div>
+								<div class="fav__th fav__th--4">Количество</div>
+								<div class="fav__th fav__th--5"></div>
+							</div>
+          					<div class="fav__main">
+          						<div class="fav__group">
+									<div class="fav__item">
+										<a href="#" class="fav__item-pic"><img src="img/kex.jpg" alt=""></a>
+										<div class="fav__item-main">
+											<div class="fav__item-name">Маффины "Ягода"</div>
+											<div class="fav__item-price">500 руб.</div>
+											<div class="fav__item-calc"><input type="number" min="1" step="1" value="1"></div>
+											<div class="fav__item-bar">
+												<button class="btn btn--black fav__item-btn">В корзину</button>
+<button class="btn btn--del fav__item-del" title="Удалить">Удалить</button>
+												<button class="btn fav__item-add fav__item-add--del">Удалить из избранного</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="fav__group">
+									<div class="fav__item">
+										<a href="#" class="fav__item-pic"><img src="img/kex.jpg" alt=""></a>
+										<div class="fav__item-main">
+											<div class="fav__item-name">Маффины "Ягода"</div>
+											<div class="fav__item-price">500 руб.</div>
+											<div class="fav__item-calc"><input type="number" min="1" step="1" value="1"></div>
+											<div class="fav__item-bar">
+												<button class="btn btn--black fav__item-btn">В корзину</button>
+<button class="btn btn--del fav__item-del" title="Удалить">Удалить</button>
+												<button class="btn fav__item-add fav__item-add--del">Удалить из избранного</button>
+											</div>
+										</div>
+									</div>
+								</div>
+          					<div class="fav__group">
+									<div class="fav__item">
+										<a href="#" class="fav__item-pic"><img src="img/kex.jpg" alt=""></a>
+										<div class="fav__item-main">
+											<div class="fav__item-name">Маффины "Ягода"</div>
+											<div class="fav__item-price">500 руб.</div>
+											<div class="fav__item-calc"><input type="number" min="1" step="1" value="1"></div>
+											<div class="fav__item-bar">
+												<button class="btn btn--black fav__item-btn">В корзину</button>
+<button class="btn btn--del fav__item-del" title="Удалить">Удалить</button>
+												<button class="btn fav__item-add fav__item-add--del">Удалить из избранного</button>
+											</div>
+										</div>
+									</div>
+								</div>
+          					<div class="fav__group">
+									<div class="fav__item">
+										<a href="#" class="fav__item-pic"><img src="img/kex.jpg" alt=""></a>
+										<div class="fav__item-main">
+											<div class="fav__item-name">Маффины "Ягода"</div>
+											<div class="fav__item-price">500 руб.</div>
+											<div class="fav__item-calc"><input type="number" min="1" step="1" value="1"></div>
+											<div class="fav__item-bar">
+												<button class="btn btn--black fav__item-btn">В корзину</button>
+<button class="btn btn--del fav__item-del" title="Удалить">Удалить</button>
+												<button class="btn fav__item-add fav__item-add--del">Удалить из избранного</button>
+											</div>
+										</div>
+									</div>
+								</div>
+          					<div class="fav__group">
+									<div class="fav__item">
+										<a href="#" class="fav__item-pic"><img src="img/kex.jpg" alt=""></a>
+										<div class="fav__item-main">
+											<div class="fav__item-name">Маффины "Ягода"</div>
+											<div class="fav__item-price">500 руб.</div>
+											<div class="fav__item-calc"><input type="number" min="1" step="1" value="1"></div>
+											<div class="fav__item-bar">
+												<button class="btn btn--black fav__item-btn">В корзину</button>
+<button class="btn btn--del fav__item-del" title="Удалить">Удалить</button>
+												<button class="btn fav__item-add fav__item-add--del">Удалить из избранного</button>
+											</div>
+										</div>
+									</div>
+								</div>
+          					<div class="fav__group">
+									<div class="fav__item">
+										<a href="#" class="fav__item-pic"><img src="img/kex.jpg" alt=""></a>
+										<div class="fav__item-main">
+											<div class="fav__item-name">Маффины "Ягода"</div>
+											<div class="fav__item-price">500 руб.</div>
+											<div class="fav__item-calc"><input type="number" min="1" step="1" value="1"></div>
+											<div class="fav__item-bar">
+												<button class="btn btn--black fav__item-btn">В корзину</button>
+<button class="btn btn--del fav__item-del" title="Удалить">Удалить</button>
+												<button class="btn fav__item-add fav__item-add--del">Удалить из избранного</button>
+											</div>
+										</div>
+									</div>
+								</div>
+          					<div class="fav__group">
+									<div class="fav__item">
+										<a href="#" class="fav__item-pic"><img src="img/kex.jpg" alt=""></a>
+										<div class="fav__item-main">
+											<div class="fav__item-name">Маффины "Ягода"</div>
+											<div class="fav__item-price">500 руб.</div>
+											<div class="fav__item-calc"><input type="number" min="1" step="1" value="1"></div>
+											<div class="fav__item-bar">
+												<button class="btn btn--black fav__item-btn">В корзину</button>
+<button class="btn btn--del fav__item-del" title="Удалить">Удалить</button>
+												<button class="btn fav__item-add fav__item-add--del">Удалить из избранного</button>
+											</div>
+										</div>
+									</div>
+								</div>
+          					<div class="fav__group">
+									<div class="fav__item">
+										<a href="#" class="fav__item-pic"><img src="img/kex.jpg" alt=""></a>
+										<div class="fav__item-main">
+											<div class="fav__item-name">Маффины "Ягода"</div>
+											<div class="fav__item-price">500 руб.</div>
+											<div class="fav__item-calc"><input type="number" min="1" step="1" value="1"></div>
+											<div class="fav__item-bar">
+												<button class="btn btn--black fav__item-btn">В корзину</button>
+<button class="btn btn--del fav__item-del" title="Удалить">Удалить</button>
+												<button class="btn fav__item-add fav__item-add--del">Удалить из избранного</button>
+											</div>
+										</div>
+									</div>
+								</div>
+          					<div class="fav__group">
+									<div class="fav__item">
+										<a href="#" class="fav__item-pic"><img src="img/kex.jpg" alt=""></a>
+										<div class="fav__item-main">
+											<div class="fav__item-name">Маффины "Ягода"</div>
+											<div class="fav__item-price">500 руб.</div>
+											<div class="fav__item-calc"><input type="number" min="1" step="1" value="1"></div>
+											<div class="fav__item-bar">
+												<button class="btn btn--black fav__item-btn">В корзину</button>
+<button class="btn btn--del fav__item-del" title="Удалить">Удалить</button>
+												<button class="btn fav__item-add fav__item-add--del">Удалить из избранного</button>
+											</div>
+										</div>
+									</div>
+								</div>
            					</div>
            				</div>
            				<div class="fav__pagination">
