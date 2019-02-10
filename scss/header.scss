@@ -11,6 +11,11 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		&-left{
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+		}
 		&-mob{display: none;}
 		&-right{
 			display: flex;
@@ -25,8 +30,15 @@
 	&__tel{
 		font-size: 3.2rem;
 		color: #000;
-		padding-right: 5rem;
+		padding-right: 1.4rem;
+		position: relative;		
+	}
+	&__wa{
+		display: block;
+		width: 3.6rem;
+		height: 3.6rem;
 		position: relative;
+		font-size: 0;
 		&:before, &:after{
 			content: '';
 			display: block;
@@ -38,7 +50,7 @@
 			margin-top: -1.8rem;
    			transition: opacity .25s ease;
    			background: center center no-repeat;
-			background-size: contain;
+			background-size: 100%;
 		}
 		&:before{
 			background-image: url(../img/header/whatsapp.svg);
@@ -197,7 +209,11 @@
 		.header__wrap{padding-bottom: 1.8rem;}
 		.header__tel{
 			font-size: 2rem;
-			padding-right: 3.2rem;
+			padding-right: 1rem;			
+		}
+		.header__wa{
+			width: 2.2rem;
+			height: 2.2rem;
 			&:before, &:after{
 				width: 2.2rem;
 				height: 2.2rem;
@@ -245,7 +261,12 @@
 		}
 		.main-menu__sublist>li>a{font-size: 1.5rem;}
 		.main-menu__sublist>li {padding: 0 0 2.6rem;}
-		.main-menu__sublist{padding-top: 8rem;}
+		.main-menu__sublist{
+			padding-top: 8rem;
+			&--middle{
+				padding: 5rem 0;
+			}
+		}
 		.header__sign{font-size: 1.4rem;}
 	}
 }
@@ -318,6 +339,22 @@
 				font-family: $opensans;
 				font-size: 1.55rem;
 				&:hover{opacity: .6;}
+			}
+		}
+		&--middle{
+			padding: 5rem 0;
+			ul{
+				column-count: 1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding-left: 18rem;
+			}
+			li{
+				padding: 0;
+				margin: 0 5.5rem;
+				&:first-child{margin-left: 0;}
+				&:last-child{margin-right: 0;}
 			}
 		}
 	}
@@ -395,6 +432,22 @@
 			}
 		}
 		&__tel{display: none;}
+		&__wa{
+			display: block;
+			width: 2.2rem;
+			height: 2.2rem;
+			position: absolute;
+			top: 4.5rem;
+			left: 4rem;
+			font-size: 0;
+			&:before, &:after{
+				width: 2.2rem;
+				height: 2.2rem;
+				right: 0;
+				top: 0;
+				margin-top: 0;
+			}
+		}
 		&__sign{display: none;}
 		&__shopcart{
 			position: absolute;
@@ -412,10 +465,14 @@
 		&__like{display: none;}
 		&__search{display: none;}
 		&__logo-group{
-			margin: 1.5rem auto 0;
+			padding: 1.4rem 5rem 0 8rem;
+			margin: 0;
 			width: 100%;
-			max-width: 18.3rem;
-			img{margin-bottom: 0;}
+			
+			img{
+				margin: 0 auto;
+				max-width: 16rem;
+			}
 		}
 		&__logo-txt{display: none;}
 		&--fix{display: none;}
@@ -480,6 +537,23 @@
 		}
 		&__sublist{
 			display: none !important;
+			&--middle{
+				display: block !important;
+				position: static;
+				padding: 1.5rem 0 0;
+				border: none;
+				box-shadow: none;
+				ul{
+					padding: 0;
+					display: block;
+					text-align: center;
+				}
+				li{
+					margin: 1rem auto;
+					&:first-child{margin-top: 0;}
+					&:last-child{margin-bottom: 0;}
+				}
+			}
 		}
 	}
 }

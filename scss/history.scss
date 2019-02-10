@@ -1,0 +1,121 @@
+.history{
+	margin-bottom: 7.5rem;
+	&__year{
+		margin-bottom: 7rem;
+		&:last-child{margin-bottom: 0;}
+		&-title{
+			font-weight: 400;
+			font-size: 2rem;
+			margin-bottom: 2.8rem;
+		}
+	}
+	&__item{
+		margin-bottom: 2.5rem;
+		&:last-child{margin-bottom: 0;}
+		&-date{
+			margin-bottom: .4rem;
+			font-size: 1.5rem;
+			font-weight: 300;
+			opacity: .5;
+		}
+		&-wrap{
+			border: 1px solid #eaeaea;
+			padding: 2rem 4rem 0;
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+		}
+		&-main{
+			width: 32.4rem;
+			padding-right: 4rem;
+			font-size: 1.5;
+		}
+		&-numb{
+			margin-bottom: 1rem;
+			a{
+				color: #000;
+				text-decoration: underline;
+				&:hover{text-decoration: none;}
+			}
+		}
+		&-price{
+			margin-bottom: 1rem;
+		}
+		&-status{
+			font-weight: 300;
+		}
+		&-list{
+			width: calc(100% - 32.4rem);
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+		&-position{
+			width: calc((100% - 10rem) / 11);
+			margin: 0 1rem 1rem 0;
+			&:nth-child(11n+11){margin-right: 0;}
+			text-align: center;
+			font-size: 1.3rem;
+			color: #000;
+			font-weight: 300;
+			img{margin-bottom: .4rem;}
+		}
+	}
+	&__bar{
+		&-btn{
+			width: 100%;
+			max-width: 41rem;
+			height: 5rem;
+			line-height: calc(5rem - 2px);
+			margin: 0 auto;
+			font-size: 1.7rem;
+			font-weight: 300;
+		}
+	}
+}
+
+@media only screen and (max-width : 767px){
+	.history{
+		margin-bottom: 4rem;
+		&__year{
+			margin-bottom: 4rem;
+			&:last-child{margin-bottom: 0;}
+			&-title{
+				margin-bottom: 2rem;
+				text-align: center;
+			}
+		}
+		&__item{
+			margin-bottom: 2rem;
+			&:last-child{margin-bottom: 0;}
+			&-date{text-align: center;}
+			&-wrap{
+				padding: 2rem 1.5rem 0;
+				display: block;
+			}
+			&-main{
+				width: 100%;
+				margin-bottom: 2rem;
+				padding-right: 0;
+				text-align: center;
+			}
+			&-list{
+				width: 100%;
+			}
+			&-position{
+				width: calc((100% - 3rem) / 4);
+				margin: 0 1rem 1rem 0;
+				&:nth-child(11n+11){margin-right: 1rem;}
+				&:nth-child(4n+4){margin-right: 0;}
+			}
+		}
+		&__bar{
+			&-btn{
+				max-width: 100%;
+				height: 4rem;
+				line-height: calc(4rem - 2px);
+			}
+		}
+	}
+}
