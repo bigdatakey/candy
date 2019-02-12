@@ -359,6 +359,7 @@
   		transition: background-color .25s ease;
 		cursor: pointer;
 		margin: 0 .5rem; 
+		text-decoration: none !important;
 		&:hover,&.active{background-color: #e4e2e2;}
 	}
 	span{
