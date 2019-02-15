@@ -127,14 +127,21 @@ $(document).ready(function(){
 					}
 				}
 				else{
-					if(((windPos + fixHeaderHeight) >= catalogPos) && (filterBot < (catalogBot - 20)) ){
 
-						jsFilter.removeClass('bot').addClass('fix').removeAttr('style').css({
-							top: fixHeaderHeight + 'px'
-						});
-					}
-					else if (filterBot >= (catalogBot - 20)){
-						jsFilter.addClass('bot').removeClass('fix').removeAttr('style');
+					if( ((windPos + fixHeaderHeight) >= catalogPos)){
+						if(filterBot < (catalogBot - 20)){
+
+							if( ((fixHeaderHeight + filterHeight + windPos) < catalogBot) ){
+								jsFilter.removeClass('bot').addClass('fix').removeAttr('style').css({
+									top: fixHeaderHeight + 'px'
+								});
+							} else{
+								jsFilter.addClass('bot').removeClass('fix').removeAttr('style');
+							}
+							
+						} else{
+							jsFilter.addClass('bot').removeClass('fix').removeAttr('style');
+						}
 					}
 					else{
 						jsFilter.removeClass('fix').removeClass('bot').removeAttr('style');
