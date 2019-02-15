@@ -233,10 +233,11 @@
 			padding: 0 2.2rem;
 		}
 		&-del{
-			display: none;
+			display: block;
 			position: absolute;
-			top: 0;
+			top: 1.3rem;
 			right: 1.5rem;
+			right: 0;
 			height: 13px;
 			width: 13px;
 			font-size: 0;
@@ -545,6 +546,7 @@
 			}
 			&-calc{padding-top: .4rem;}
 			&-del{
+				top: 0;
 				right: 0;
 				display: block;
 			}
