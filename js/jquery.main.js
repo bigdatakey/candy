@@ -65,7 +65,8 @@ $(document).ready(function(){
 	/*fix menu*/
 	if($(window).width() > 767){
 
-		if($('#js-filter').height() <= $('.catalog__main').height()){
+		if($('#js-filter').height() < ($('.catalog__main').height() - 30)){
+			console.log($('#js-filter').height(), $('.catalog__main').height());
 			var lastPos = $(window).scrollTop(),
 				lastWinPos = lastPos,
 				jsFilter = $('#js-filter'),
