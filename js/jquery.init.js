@@ -1,4 +1,25 @@
-$(document).ready(function(){
+$(document).ready(function(){	
+	$('#js-index-slider').slick({
+    	slidesToShow: 3,
+    	slidesToScroll: 1,
+    	arrows: true,
+    	dots: false,
+    	infinite: true,
+        responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+                	slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 440,
+				settings: {
+                	slidesToShow: 1
+				}
+			}
+		]
+	});
             
 	$('#js-main-slider').slick({
 		slidesToShow: 1,

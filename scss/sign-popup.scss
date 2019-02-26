@@ -172,8 +172,8 @@
 			padding: 0 2.8rem;
 			&.slick-slider{position: relative;}
 			.slick-list{overflow: hidden;}
-			.slick-prev{width: 2.8rem;}
-			.slick-next{width: 2.8rem; background-position: .4rem 40%;}
+			.slick-prev{width: 2.8rem; background-position: 0 25%;}
+			.slick-next{width: 2.8rem; background-position: .4rem 25%;}
 			.catalog__item:hover{
 				.catalog__item-pic-img{opacity: .3;}
 			}
@@ -217,11 +217,11 @@
 			.carusel__slider{
 				.slick-next {
 					width: 2.3rem;
-					background-position: center 38%;
+					background-position: center 25%;
 				}
 				.slick-prev {
 					width: 2.3rem;
-					background-position: center 38%;
+					background-position: center 25%;
 				}
 			}
 		}
