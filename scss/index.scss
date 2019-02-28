@@ -107,6 +107,9 @@
 		.catalog__item-name {
 			font-weight: 300;
 			margin-bottom: 1rem;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 		.catalog__item-price{font-weight: 300;}
 	}
@@ -131,7 +134,9 @@
 		margin: 2.5rem 0 4rem;
 		padding: 0 2.8rem;
 		.slick-arrow {
-			top: 25%;
+			top: 0;
+			height: calc(100% - 6rem);
+			background-position: center center;
 		}
 		.slick-prev {
 			left: 0;

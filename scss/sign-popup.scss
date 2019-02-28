@@ -65,10 +65,15 @@
 	}
 	&__or{
 		text-align: center;
-		margin: 2rem 0;
+		margin: 1.8rem 0;
 		opacity: .5;
 		font-size: 1.5rem;
 		font-family: $opensans;
+		a{
+			color: #000;
+			text-decoration: underline;
+			&:hover{text-decoration: none;}
+		}
 	}
 	&__label{
 		display: block;
