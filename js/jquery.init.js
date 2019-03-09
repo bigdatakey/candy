@@ -71,18 +71,10 @@ $(document).ready(function(){
 	$('#js-gallery-slider').slick({
 	 	slidesToShow: 1,
 	 	slidesToScroll: 1,
-	 	arrows: true,
+	 	arrows: false,
 	 	fade: true,
 		infinite: false,
-	 	asNavFor: '#js-gallery-carusel',
-        responsive: [
-			{
-				breakpoint: 768,
-				settings: {
-                	arrows: false
-				}
-			}
-		]
+	 	asNavFor: '#js-gallery-carusel'
 	});
 	$('#js-gallery-carusel').slick({
 	 	slidesToShow: 4,
@@ -91,11 +83,11 @@ $(document).ready(function(){
 	 	dots: false,
 		infinite: false,
 	 	focusOnSelect: true,
+		arrows: true,
         responsive: [
 			{
 				breakpoint: 768,
 				settings: {
-                	arrows: true,
 					slidesToShow: 3
 				}
 			}
