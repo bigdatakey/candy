@@ -225,10 +225,42 @@
            				</div>
            				<div class="detail__gallery">
            					<div class="detail__slider" id="js-gallery-slider">
-           						<div><div class="detail__slide js-zoom"><img src="img/pic-big.jpg" alt=""></div></div>
-           						<div><div class="detail__slide js-zoom"><img src="img/pic-big.jpg" alt=""></div></div>
-           						<div><div class="detail__slide js-zoom"><img src="img/pic-big.jpg" alt=""></div></div>
-           						<div><div class="detail__slide js-zoom"><img src="img/pic-big.jpg" alt=""></div></div>
+           						<div class="detail__slide">
+           							<div class="js-g">
+           								<div class="swiper-wrapper">
+           									<div class="swiper-slide">
+           										<div class="swiper-zoom-container js-zoom"><img src="img/pic-big.jpg" alt=""></div>
+											</div>
+										</div>
+          							</div>
+          						</div>
+           						<div class="detail__slide">
+           							<div class="js-g">
+           								<div class="swiper-wrapper">
+           									<div class="swiper-slide">
+           										<div class="swiper-zoom-container js-zoom"><img src="img/pic-big.jpg" alt=""></div>
+											</div>
+										</div>
+          							</div>
+          						</div>
+          						<div class="detail__slide">
+           							<div class="js-g">
+           								<div class="swiper-wrapper">
+           									<div class="swiper-slide">
+           										<div class="swiper-zoom-container js-zoom"><img src="img/pic-big.jpg" alt=""></div>
+											</div>
+										</div>
+          							</div>
+          						</div>
+          						<div class="detail__slide">
+           							<div class="js-g">
+           								<div class="swiper-wrapper">
+           									<div class="swiper-slide">
+           										<div class="swiper-zoom-container js-zoom"><img src="img/pic-big.jpg" alt=""></div>
+											</div>
+										</div>
+          							</div>
+          						</div>
            						<div>
            							<div class="detail__slide">
            								<div class="detail__video">
@@ -256,18 +288,8 @@
            							</div>
            						</div>
            					</div>
-<!--
-           					<div class="video-wrapper" id="js-video-vrapper">
-								<div class="video-wrapper__overlay js-video-close"></div>
-								<div class="video-wrapper__container">
-									<button class="btn popup__close video-wrapper__close js-video-close" title="Закрыть">Закрыть</button>
-									<div class="video-wrapper__blc" id="js-video-container">
-										<iframe frameborder="0" allowfullscreen=""></iframe>
-									</div>
-								</div>
-							</div>
--->
            				</div>
+           				
            				<div class="detail__main">           					
            					<div class="detail__bar">
            						<div class="detail__calc">
@@ -342,7 +364,6 @@
 											</svg>
 										</a>
 									</li>
-<!--
 									<li>
 										<a href="#" target="_blank" class="detail__soc-link detail__soc-link--whatsapp" title="Whatsapp">
 											<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -359,11 +380,11 @@
 											</svg>
 										</a>
 									</li>
--->
 								</ul>
            					</div>
            				</div>
-           			</div>
+           			
+					</div>
            		</div>
            	</div> 
            	<section class="carusel">
@@ -730,6 +751,7 @@
 	<!--Slick-->
 	<script src="js/vendors/slick.min.js"></script>
 	<!--Formstyler-->
+	<script src="js/vendors/swiper.min.js"></script>
 	<script src="js/vendors/jquery.formstyler.min.js"></script>
 	<script>
 		/*formstyller init*/
@@ -744,16 +766,27 @@
 	<!--Zoom-->
 	<script src='js/vendors/jquery.zoom.min.js'></script>
 	<script>
-		$(document).ready(function(){
-			$('.js-zoom').zoom({ 
-				on:'click',
-				onZoomIn: function(){
-				  $(this).addClass('zoomed');
-				},
-				onZoomOut: function(){
-				  $(this).removeClass('zoomed');
-				},
-			});
+		$(document).ready(function(){		
+			
+			if($(window).width()>=1366){
+				$('.js-zoom').zoom({ 
+					magnify: .5,
+					on: 'click',
+					onZoomIn: function(){
+					  $(this).addClass('zoomed');
+					},
+					onZoomOut: function(){
+					  $(this).removeClass('zoomed');
+					},
+				});
+				$('.detail__name').on('click', function(){
+					$('.js-zoom').trigger('click');
+				});
+			} else{
+				var galleryTop = new Swiper('.js-g', { 
+				  zoom: true,		  
+			  });
+			}
 		});
 	</script>
 	<script src="js/jquery.init.js"></script>	
